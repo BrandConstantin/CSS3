@@ -1,0 +1,11 @@
+#sombra{
+	background-image: url("img/europeanStartUp.jpg") no-repeat 100% 100%;
+	padding-right: 70px;
+	padding-bottom: 70px;
+	width: 610px;
+}
+
+#sombra div{
+	background: lightblue;
+	width: 610px;
+}

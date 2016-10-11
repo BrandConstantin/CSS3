@@ -1,0 +1,27 @@
+#contenedor{
+	border: thick solid #000;
+}
+
+h1{
+	text-align: center;
+}
+
+#derecha{
+	float: right;
+	margin-right: 5px;
+	width: 40%;
+	background-color: blue;
+	height: 20px;
+}
+
+#izquierda{
+	float: left;
+	margin-left: 5px;
+	width: 40%;
+	background-color: red;
+	height: 20px;
+}
+
+#clear{
+	clear: both;
+}

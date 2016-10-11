@@ -1,0 +1,43 @@
+ul{
+	list-style: none;
+}
+
+#corazon{
+	background-image: url("../img/sprite.png");
+	background-position: -330px -62px;
+	width: 30px;
+	height: 31px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+#casa{
+	background-image: url("../img/sprite.png");
+	background-position: -300px -120px;
+	width: 30px;
+	height: 31px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+#lupa{
+	background-image: url("../img/sprite.png");
+	background-position: -160px -250px;
+	width: 30px;
+	height: 31px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+#disqueta{
+	background-image: url("../img/sprite.png");
+	background-position: -581px -159px;
+	width: 30px;
+	height: 31px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}

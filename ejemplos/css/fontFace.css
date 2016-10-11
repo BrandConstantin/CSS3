@@ -1,0 +1,11 @@
+@font-face{
+  font-family: Fontinsans;
+  src: url("fonts/Fontin_Sans_SC_45b.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: Tagesschrift;
+  src: url("fonts/YanoneTagesschrift.ttf") format("truetype");
+}
