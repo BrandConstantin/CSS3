@@ -1,0 +1,50 @@
+#uno, #dos, #tres, #cuatro, #cinco, #seis{
+	width: 350px;
+	height: 250px;
+	background-color: #4B7C67;
+	margin-top: 30px;
+	margin-left: 40px;
+	float: left;
+}
+
+#uno{
+    border-radius: 10px 10px 250px 10px;
+    -moz-border-radius: 10px 10px 250px 10px;
+    -webkit-border-radius: 10px 10px 250px 10px;
+    border: 0px solid #000000;
+}
+
+#dos{
+    border-radius: 10px 10px 100px 10px;
+    -moz-border-radius: 10px 10px 100px 10px;
+    -webkit-border-radius: 10px 10px 100px 10px;
+    border: 0px solid #000000;
+}
+
+#tres{
+    border-radius: 10px 10px 175px 10px;
+    -moz-border-radius: 10px 10px 175px 10px;
+    -webkit-border-radius: 10px 10px 175px 10px;
+    border: 0px solid #000000;
+}
+
+#cuatro{
+    border-radius: 100px 190px 100px 190px;
+    -moz-border-radius: 100px 190px 100px 190px;
+    -webkit-border-radius: 100px 190px 100px 190px;
+    border: 0px solid #000000;
+}
+
+#cinco{
+    border-radius: 50px 50px 50px 50px;;
+    -moz-border-radius: 50px 50px 50px 50px;;
+    -webkit-border-radius: 50px 50px 50px 50px;;
+    border: 0px solid #000000;
+}
+
+#seis{
+    border-radius: 100%;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 2px solid #000000;
+}

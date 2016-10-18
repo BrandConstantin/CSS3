@@ -1,0 +1,54 @@
+#uno, #dos, #tres, #cuatro, #cinco, #seis{
+	width: 350px;
+	height: 250px;
+	background-color: #4B7C67;
+	margin-top: 30px;
+	margin-left: 40px;
+	float: left;
+}
+
+#uno{
+    -webkit-box-shadow: 10px 10px 1px 1px rgba(156,4,20,1);
+    -moz-box-shadow: 10px 10px 1px 1px rgba(156,4,20,1);
+    box-shadow: 10px 10px 1px 1px rgba(156,4,20,1);
+}
+
+#dos{
+    -webkit-box-shadow: 10px 10px 3px 2px rgba(156,4,20,1);
+    -moz-box-shadow: 10px 10px 3px 2px rgba(156,4,20,1);
+    box-shadow: 10px 10px 3px 2px rgba(156,4,20,1);
+}
+
+#tres{
+    -webkit-box-shadow: 10px 10px 1px 4px rgba(156,4,20,1);
+    -moz-box-shadow: 10px 10px 1px 4px rgba(156,4,20,1);
+    box-shadow: 10px 10px 1px 4px rgba(156,4,20,1);
+}
+
+#cuatro{
+    -webkit-box-shadow: 10px 10px 9px 4px rgba(156,4,20,1);
+    -moz-box-shadow: 10px 10px 9px 4px rgba(156,4,20,1);
+    box-shadow: 10px 10px 9px 4px rgba(156,4,20,1);
+}
+
+#cinco{
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(156,4,20,1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(156,4,20,1);
+    box-shadow: 0px 0px 0px 2px rgba(156,4,20,1);
+}
+
+#seis{
+    -webkit-box-shadow: 0px 0px 6px 6px rgba(156,4,20,1);
+    -moz-box-shadow: 0px 0px 6px 6px rgba(156,4,20,1);
+    box-shadow: 0px 0px 6px 6px rgba(156,4,20,1);
+}
+
+
+/*
+//en vez de valores positivos se puede utilizar
+
+-webkit-box-shadow: inset -10px -10px 0px 4px rgba(156,9,20,1);
+-moz-box-shadow: inset -10px -10px 0px 4px rgba(156,9,20,1);
+box-shadow: inset -10px -10px 0px 4px rgba(156,9,20,1);
+
+*/

@@ -1,0 +1,58 @@
+#uno, #dos, #tres, #cuatro, #cinco, #seis{
+	margin-top: 30px;
+	margin-left: 40px;
+	float: left;
+    font-style: 10px small-caps;
+    color: #000;
+}
+
+#cuatro{
+    color: #fff;
+}
+
+#cinco{
+    color: #B1A78E;
+}
+
+#seis{
+    color: #C6C2B8;
+}
+
+#uno{
+    text-shadow: : 0px 0px 0px #000;
+    -moz-text-shadow: 0px 0px 0px #000;
+    -webkit-text-shadow: 0px 0px 0px #000;
+}
+
+#dos{
+    text-shadow:0px 0px 10px #801515;
+    -moz-text-shadow:0px 0px 10px #801515;
+    -webkit-text-shadow:0px 0px 10px #801515;
+}
+
+#tres{
+    text-shadow: 0px 8px 5px green, 0px -4px 5px red, -9px 0px 5px blue; 
+    -moz-text-shadow:0px 0px 5px #000;
+    -webkit-text-shadow:0px 0px 5px #000;
+}
+
+#cuatro{
+    background-color: #B3A992;
+    text-shadow:0px 0px 5px;
+    -moz-text-shadow:0px 0px 5px #fff;
+    -webkit-text-shadow:0px 0px 5px #fff;
+}
+
+#cinco{
+    background-color: #B1A78E;
+    text-shadow:  1px 0px 1px #000, -1px 0px 1px #fff;
+    -moz-text-shadow:0px 0px 5px #fff;
+    -webkit-text-shadow:0px 0px 5px #fff;
+}
+
+#seis{
+    background-color: #C6C2B8;
+    text-shadow: 1px 0px 1px #fff, -1px 0px 1px #000;
+    -moz-text-shadow:0px 0px 5px #fff;
+    -webkit-text-shadow:0px 0px 5px #fff;
+}
