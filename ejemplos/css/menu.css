@@ -1,0 +1,26 @@
+ul { 
+	background-color: blue; 
+	border-bottom: 1px dotted #999; 
+	list-style: none; margin: 15px; 
+	width: 150px; padding-left: 0; 
+}
+
+li { 
+	background-color: #FFF; 
+	border: 1px dotted #999; 
+	border-bottom-width: 0; 
+	font: 1.2em/1.333 Verdana, Arial, sans-serif; 
+}
+
+li a { 
+	color: #000; 
+	display: block; 
+	height: 100%; 
+	padding: 0.25em 0; 
+	text-align: center; 
+	text-decoration: none; 
+}
+
+li a:hover { 
+	background-color: #EFEFEF; 
+}

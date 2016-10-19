@@ -1,0 +1,42 @@
+body > ul { 
+	border-width: 0; 
+}
+
+ul > li { 
+	border: 1px solid #FFF; 
+	border-width: 1px 0 0 0; 
+}
+
+li > a { 
+	background-color: #666; 
+	color: white; 
+	font-weight: bold; 
+}
+
+li:first-child a { 
+	color: yellow; 
+}
+li > a:hover{ 
+	background-color: #999; 
+}
+
+li { 
+	opacity: 0.9; 
+}
+
+li:hover{ 
+	opacity: 1; 
+}
+
+li:nth-child(2n+1) a { 
+	background-color: #333; 
+}
+
+li:nth-child(n) a:hover { 
+	background-color: #AAA; 
+	color: #000; 
+}
+
+li:first-child > a:hover{ 
+	color: yellow; 
+}
