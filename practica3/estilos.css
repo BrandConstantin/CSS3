@@ -1,0 +1,53 @@
+/* Todos los elementos de la página */
+*{ font: 1em/1.3 Arial, Helvetica, sans-serif; }
+
+/* Todos los párrafos de la página */
+p{ color: #555; }
+
+/* Todos los párrafos contenidos en #primero */
+{ color: #336699; }
+
+/* Todos los enlaces la página */
+a{ color: #CC3300; }
+
+/* Los elementos "em" contenidos en #primero */
+#primero em{ background: #FFFFCC; padding: .1em; }
+
+/* Todos los elementos "em" de clase "especial" en toda la página */
+em.especial{ background: #FFCC99; border: 1px solid #FF9900; padding: .1em; }
+
+/* Elementos "span" contenidos en .normal */
+.normal span{ font-weight: bold; }
+
+/* Todos los hijos “em” de una “p” */
+p > em{ color: #444 }
+
+/////////////////////////////////////////////
+/* todos los hermanos de “span” de una “p” */
+span + span{ font-size: 8em; }
+/* Los enlaces visitados */
+a:visited{ border: red 2px dotted; background: orange; }
+/* Todos los elementos cuya clase sea “especial” */
+{border: red 2px dotted;}
+/////////////////////////////////////////////
+
+/* Todos los elementos cuya clase contenga “especial” */
+.especial{font-size: .5em; }
+
+/* El primer hijo <a> del primer párrafo de la clase “normal” */
+.normal a:first-child{ background: yellow;}
+
+/* Todos los “em” cuando se pase por encima */
+em:hover{ font-size: 2em; background: blue; }
+
+/* La primera fila de todos los párrafos */
+p:first-line{ text-transform: uppercase;}
+
+/* El primer carácter de todos los párrafos */
+p:first-letter{ font-size: 200%; color: #8A2BE2;}
+
+/* Insertar después de todos los párrafos un punto */
+p:after{content: ".";}
+
+/* Los párrafos hijos impares de la clase normal */
+.normal p:nth-child(odd){ background: lightblue;}
