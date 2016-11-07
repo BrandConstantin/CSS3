@@ -1,0 +1,10 @@
+div#header{
+	background-image: url("img/banner.jpg");
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: scroll;
+	background-clip: padding-box;
+	background-size: cover;
+	background-origin: padding-box;
+}
