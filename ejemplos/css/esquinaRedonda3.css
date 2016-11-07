@@ -1,0 +1,15 @@
+b.superior{
+	background: url("img/fondo.png") no-repeat;
+}
+
+b.superior b{
+	background: url("img/fondo.png") no-repeat;
+}
+
+b.inferior{
+	background: url("img/fondo.png") no-repeat;
+}
+
+b.inferior b{
+	background: url("img/fondo.png") no-repeat;
+}

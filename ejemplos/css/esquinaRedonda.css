@@ -1,0 +1,27 @@
+.equinaSuperior, .esquinaInferior{
+	display: block;
+}
+
+.equinaSuperior*, .esquinaInferior*{
+	display: block;
+	height: 1px;
+	overflow: hidden;
+}
+
+.e1{
+	margin: 0 10px;
+	background-color: lightgreen;
+}
+
+.e2{
+	margin: 0 7px;
+}
+
+.e3{
+	margin: 0 4px;
+}
+
+.e1{
+	margin: 0 1px;
+	height: 4px;
+}

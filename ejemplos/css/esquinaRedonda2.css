@@ -1,0 +1,52 @@
+.esquina{
+	display: block;
+}
+
+.esquina*{
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	font-size: .01em;
+	background-color: #000;
+}
+
+.e1{
+	margin-left: 3px;
+	margin-right: 3px;
+	padding-left: 1px;
+	padding-right: 1px;
+	border-left: 1px solid #919;
+	border-right: 1px solid #919;
+	background-color: #33f;
+}
+
+.e2{
+	margin-left: 1px;
+	margin-right: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	border-left: 1px solid #e5e;
+	border-right: 1px solid #e5e;
+	background-color: #303;
+}
+
+.e3{
+	margin-left: 1px;
+	margin-right: 1px;
+	border-left: 1px solid #303;
+	border-right: 1px solid #303;
+}
+
+.e4{
+	border-left: 1px solid #919;
+	border-right: 1px solid #919;
+}
+
+.e5{
+	border-left: 1px solid #33f;
+	border-right: 1px solid #33f;
+}
+
+.esquinaFG{
+	background-color: #000;
+}

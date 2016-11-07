@@ -1,0 +1,23 @@
+#localidad1, #localidad2, #localidad3, #localidad4{
+	padding-left: 38px;
+	height: 32px;
+	line-height: 32px;
+	background-image: url("img/meteo2.gif");
+	background-repeat: no-repeat;
+}
+
+#localidad1{
+	background-position: 0 0;
+}
+
+#localidad2{
+	background-position: -32px 0;
+}
+
+#localidad3{
+	background-position: 0 -32px;
+}
+
+#localidad4{
+	background-position: -32px -32px;
+}
