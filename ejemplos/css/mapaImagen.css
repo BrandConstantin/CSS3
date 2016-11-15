@@ -1,0 +1,79 @@
+img{
+	width: 99%;
+	height: 650px;
+}
+/*posicionar de forma absoluta cada nota*/
+div.mapaImagen{
+	position: relative;
+	width: 99%;
+	height: 650px;
+}
+
+ul.notas li{
+	position: absolute;
+}
+
+/*aplicar estilos basicos*/
+ul.notas li{
+	border: medium solid #fff;
+	list-style: none;
+}
+
+/*ocultar por defecto las notas y mostrarlas cuando
+se pasa el ratón por encima de la imágen*/
+ul.notas li{
+	display: none;
+}
+
+div.mapaImagen:hover ul.notas li{
+	display: block;
+}
+
+/*aplicar estilos basicos al texto de las notas
+y posicionarlo debajo de cada nota*/
+ul.notas li p{
+	position: absolute;
+	top: 100%;
+	background: #fff;
+	opacity: 0.60;
+	margin: 0 auto;
+	padding: 0.3em;
+}
+
+/*ocultar por defecto el texto de las notas y
+mostrarlo cuanso se pasa el ratón por encima de 
+la nota*/
+ul.notas li p{
+	display: none;
+}
+
+ul.notas li:hover p{
+	display: block;
+}
+
+/*establecer la posicion y demensión de cada nota*/
+ul.notas li#nota1{
+	width: 300px;
+	height: 50px;
+	top: 40%;
+	left: 340px;
+	color: #fff;
+	text-align: center;
+}
+
+ul.notas li#nota2{
+	width: 300px;
+	height: 50px;
+	top: 70%;
+	left: 55%;
+	color: #fff;
+	text-align: center;
+}
+
+ul.notas li#nota3{
+	width: 300px;
+	height: 50px;
+	top: 130px;
+	left: 540px;
+	text-align: center;
+}
