@@ -1,0 +1,100 @@
+#contenedor{
+	top: 100px;
+	width: 600px;
+	height: 99%;
+	background-color: navy;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+#div1{
+	background-image: url("flecha.png");	
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	top: 120px;
+	transform: rotate(25deg);
+}
+
+#div2{
+	background-image: url("flecha.png");	
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	top: 120px;
+	transform: skew(15deg, 15deg);
+}
+
+#div3{
+	background-image: url("flecha.png");	
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	top: 120px;
+	transform: scale(1.9, 0.5);
+}
+
+#div4{
+	background-image: url("flecha.png");	
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	top: 120px;
+	transform: translate(105px, 0);
+}
+
+#div5{
+	background-image: url("flecha.png");	
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	top: 120px;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+#div6{
+	background-image: url("flecha.png");	
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	top: 120px;
+    perspective: 500px;
+    transform: rotateY(45deg);
+}
+
+#div7{
+	background-image: url("flecha.png");	
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	top: 120px;
+    perspective-origin: 150px 150px; 
+}
+
+#div8{
+	background-image: url("flecha.png");	
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	top: 120px;
+    perspective-origin: 50% 50%;
+}
+
+#div9{
+	background-image: url("flecha.png");	
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	top: 120px;
+    perspective-origin: 50px -50px;
+}
