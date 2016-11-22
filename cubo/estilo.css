@@ -1,0 +1,86 @@
+@keyframes cubo{
+	from{
+			transform: rotateX(0deg) rotateY(0deg);
+		}to{
+			transform: rotateX(360deg) rotateY(360deg);
+		}
+	}
+
+	#contenedor{
+		width: 400px;
+		height: 400px;
+		position: absolute;
+		top: 300px;
+		/*margin: 0 auto;
+		float: right;*/
+		left: 350px;
+		animation-name: cubo;
+		animation-duration: 15s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		transform-style: preserve-3d;
+		transform: rotateX(90deg) rotateY(90deg);
+	}
+
+	#div1, #div2, #div3, #div4, #div5, #div6{
+		display: inline;
+		width: 50%;
+		height: 50%;
+		position: absolute;
+		opacity: 0.9;
+	}
+
+	#div1{
+		border: 1px solid black;
+		overflow: visible;
+		background-image: url("img/1.jpeg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		transform: rotateY(0deg) translateX(0px) translateZ(110px);
+	}
+
+	#div2{
+		border: 1px solid black;
+		overflow: visible;
+		background-image: url("img/2.jpeg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		transform: rotateY(0deg) translateX(0px) translateZ(-145px);
+	}
+
+	#div3{
+		border: 1px solid black;
+		overflow: visible;
+		background-image: url("img/3.jpeg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		transform: rotateY(-90deg) translateX(-15px) translateZ(125px);
+	}
+
+	#div4{
+		border: 1px solid black;
+		overflow: visible;
+		background-image: url("img/4.jpeg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		transform: rotateY(-90deg) translateX(-15px) translateZ(-125px);
+	}
+
+	#div5{
+		border: 1px solid black;
+		overflow: visible;
+		background-image: url("img/5.jpeg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		transform: rotateX(-90deg) translateY(-250px) translateY(268px) translateZ(-125px);
+	}
+
+	#div6{
+		border: 1px solid black;
+		overflow: visible;
+		background-image: url("img/6.jpeg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		transform: rotateX(-90deg) translateX(0px) translateY(20px) translateZ(125px);
+	}
+}
