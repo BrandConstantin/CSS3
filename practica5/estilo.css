@@ -17,48 +17,7 @@ body{
 	overflow: hidden;
 }
 
-/*movimiento agua*/
-
-@keyframes movimientoAgua{
-	from{
-		top: 400px;
-	}to{
-		top: 405px;
-	}
-}
-
-#agua1{
-	width: 800px;
-	height: 85px;
-	margin: 0 auto;
-	position: absolute;
-	overflow: hidden;
-	top: 566px;
-	background-image: url("img/agua-fondo.png");
-	background-repeat: repeat-x;
-	animation-name: movimientoAgua;
-	animation-duration: 0.7s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-
-#agua2{
-	width: 800px;
-	height: 85px;
-	margin: 0 auto;
-	position: absolute;
-	overflow: hidden;
-	top: 570px;
-	background-image: url("img/agua-frente.png");
-	background-repeat: repeat-x;
-	animation-name: movimientoAgua;
-	animation-duration: 0.9s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-
 /*movimiento nubes*/
-
 #nubes{
 	width: 802px;
 	height: 200px;
@@ -75,32 +34,87 @@ body{
 	}
 }
 
-#nube1, #nube2, #nube3{
+#nube1{
 	width: 187px;
 	height: 150px;
 	margin: 0 auto;
 	position: absolute;
 	animation-name: movimientoNube;
-	animation-duration: 20s;
+	animation-duration: 27s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
-}
-
-#nube1{
+	top: 77px;
 	background-image: url("img/nube1.png");
 	background-repeat: no-repeat;
 }
 
 #nube2{
+	width: 187px;
+	height: 150px;
+	margin: 0 auto;
+	position: absolute;
+	animation-name: movimientoNube;
+	animation-duration: 16s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	top: 60px;
 	background-image: url("img/nube2.png");
 	background-repeat: no-repeat;
 }
 
-#nube2{
-	background-image: url("img/nube1.png");
+#nube3{
+	width: 187px;
+	height: 150px;
+	margin: 0 auto;
+	position: absolute;
+	animation-name: movimientoNube;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	top: 0px;
+	background-image: url("img/nube3.png");
 	background-repeat: no-repeat;
 }
 
+/*movimiento agua*/
+@keyframes movimientoAgua{
+	from{
+		top: 400px;
+	}to{
+		top: 405px;
+	}
+}
+
+
+#agua1{
+	width: 800px;
+	height: 85px;
+	margin: 0 auto;
+	top: 405px;
+	position: absolute;
+	background-image: url("img/agua-fondo.png");
+	background-repeat: repeat-x;
+	animation-name: movimientoAgua;
+	animation-duration: 0.7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#agua2{
+	width: 800px;
+	height: 85px;
+	margin: 0 auto;
+	top: 405px;
+	position: absolute;
+	background-image: url("img/agua-frente.png");
+	background-repeat: repeat-x;
+	animation-name: movimientoAgua;
+	animation-duration: 0.9s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/*movimiento barco*/
 @keyframes movimientoBarco{
 	from{
 		left: -40px;
@@ -112,16 +126,58 @@ body{
 }
 
 #barco{
-	width: 249px;
-	height: 215px;
-	margin: 0 auto;
+	width: 400px;
+	height: 200px;
 	position: absolute;
 	left: 280px;
 	top: 260px;
 	background-image: url("img/Bote.png");
+	background-size: 249px 215px;
 	background-repeat: no-repeat;
 	animation-name: movimientoBarco;
-	animation-duration: 10s;
+	animation-duration: 7s;
 	animation-direction: alternate;
 	animation-timing-function: linear;
+}
+
+/*interogacion*/
+@keyframes interogacion{
+	from{
+		left: -40px;
+		top: 270px;
+	}to{
+		left: 630px;
+		top: 270px;
+	}
+}
+
+#interogacion{
+	width: 24px;
+	height: 50px;
+	position: absolute;
+	left: 630px;
+	top: 270px;
+	background-image: url("img/interrogacion.png");
+	background-repeat: no-repeat;
+	animation-name: interogacion;
+	animation-delay: 8s;
+}
+
+/*titulo*/
+@keyframes titulo{
+	from{
+		right: 70px;
+		top: 170px;
+	}to{
+		right: 200px;
+		top: 270px;
+	}
+}
+
+#titulo{
+	width: 190px;
+	height: 50px;
+	position: absolute;
+	animation-name: titulo;
+	animation-delay: 8s;
 }
