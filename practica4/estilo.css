@@ -5,67 +5,92 @@ ul li{
 }
 
 img{
-	width: 400px;
-	height: 200px;
+	width: 800px;
+	height: 400px;
 }
 
-#mapa{
-	background-image: url("imagen.jpg");
+div{
 	margin: 0 auto;
-	width: 410px;
-	height: 210px;
-	background-repeat: no-repeat;
-	vertical-align: middle;
-	background-position: 4px 7px;
-}
-
-#harbour{
-	background-image: url("imagen.jpg");
-	margin: 0 auto;
-	width: 100px;
-	height: 207px;
-	background-repeat: no-repeat;
-	vertical-align: middle;
-	background-position: 0px -198px;
-	}
-
-/*
-#harbour{
-	background-image: url("imagen.png");
-	background-position: 10px 2px;
-	width: 30px;
-	height: 31px;
-	display: inline-block;
-	background-repeat: no-repeat;
-	vertical-align: middle;
-}
-
-#bank{
-	background-image: url("imagen.png");
-	background-position: -300px -120px;
-	width: 30px;
-	height: 31px;
-	display: inline-block;
-	background-repeat: no-repeat;
-	vertical-align: middle;
-}
-
-#canada{
-	background-image: url("imagen.png");
-	background-position: -160px -250px;
-	width: 30px;
-	height: 31px;
-	display: inline-block;
-	background-repeat: no-repeat;
-	vertical-align: middle;
+	width: 810px;
+	height: 410px;
 }
 
 #other{
-	background-image: url("imagen.png");
-	background-position: -581px -159px;
-	width: 30px;
-	height: 31px;
-	display: inline-block;
+	background-image: url("imagen.jpg");
+	margin: 0 auto;
+	height: 400px;
+	width: 801px;
 	background-repeat: no-repeat;
 	vertical-align: middle;
-}*/
+	background-position: 0px 0px;
+}
+
+#other:hover{
+	background-image: url("imagen.jpg");
+	margin: 0 auto;
+	height: 400px;
+	width: 801px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-position: 0px -400px;
+}
+
+#canada{
+	background-image: url("imagen.jpg");
+	margin: 0 auto;
+	height: 400px;
+	width: 570px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-position: 0px 0px;
+}
+
+#canada:hover{
+	background-image: url("imagen.jpg");
+	margin: 0 auto;
+	height: 400px;
+	width: 570px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-position: 0px -400px;
+}
+
+#bank{
+	background-image: url("imagen.jpg");
+	margin: 0 auto;
+	height: 400px;
+	width: 353px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-position: 0px 0px;
+}
+
+#bank:hover{
+	background-image: url("imagen.jpg");
+	margin: 0 auto;
+	height: 400px;
+	width: 353px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-position: 0px -400px;
+}
+
+#harbour{
+	background-image: url("imagen.jpg");
+	margin: 0 auto;
+	height: 400px;
+	width: 193px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-position: 0px 0px;
+}
+
+#harbour:hover{
+	background-image: url("imagen.jpg");
+	margin: 0 auto;
+	height: 400px;
+	width: 193px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-position: 0px -400px;
+}

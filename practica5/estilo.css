@@ -1,0 +1,127 @@
+body{
+	background-image: url("img/fondo.jpg");
+	background-repeat: repeat;
+	width: 99%;
+	height: 99%;
+	margin: 0 auto;
+}
+
+#contenedor{
+	width: 800px;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: 40px;
+	background-image: url("img/background.png");
+	background-size: 800px 450px;
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+/*movimiento agua*/
+
+@keyframes movimientoAgua{
+	from{
+		top: 400px;
+	}to{
+		top: 405px;
+	}
+}
+
+#agua1{
+	width: 800px;
+	height: 85px;
+	margin: 0 auto;
+	position: absolute;
+	overflow: hidden;
+	top: 566px;
+	background-image: url("img/agua-fondo.png");
+	background-repeat: repeat-x;
+	animation-name: movimientoAgua;
+	animation-duration: 0.7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#agua2{
+	width: 800px;
+	height: 85px;
+	margin: 0 auto;
+	position: absolute;
+	overflow: hidden;
+	top: 570px;
+	background-image: url("img/agua-frente.png");
+	background-repeat: repeat-x;
+	animation-name: movimientoAgua;
+	animation-duration: 0.9s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/*movimiento nubes*/
+
+#nubes{
+	width: 802px;
+	height: 200px;
+	margin: 0 auto;
+	position: absolute;
+	overflow: hidden;
+}
+
+@keyframes movimientoNube{
+	from{
+		right: -200px;
+	}to{
+		right: 801px;
+	}
+}
+
+#nube1, #nube2, #nube3{
+	width: 187px;
+	height: 150px;
+	margin: 0 auto;
+	position: absolute;
+	animation-name: movimientoNube;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#nube1{
+	background-image: url("img/nube1.png");
+	background-repeat: no-repeat;
+}
+
+#nube2{
+	background-image: url("img/nube2.png");
+	background-repeat: no-repeat;
+}
+
+#nube2{
+	background-image: url("img/nube1.png");
+	background-repeat: no-repeat;
+}
+
+@keyframes movimientoBarco{
+	from{
+		left: -40px;
+		top: 250px;
+	}to{
+		left: 280px;
+		top: 260px;
+	}
+}
+
+#barco{
+	width: 249px;
+	height: 215px;
+	margin: 0 auto;
+	position: absolute;
+	left: 280px;
+	top: 260px;
+	background-image: url("img/Bote.png");
+	background-repeat: no-repeat;
+	animation-name: movimientoBarco;
+	animation-duration: 10s;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
