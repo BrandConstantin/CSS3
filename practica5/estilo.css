@@ -11,6 +11,7 @@ body{
 	height: 450px;
 	margin: 0 auto;
 	margin-top: 40px;
+	position: relative;
 	background-image: url("img/background.png");
 	background-size: 800px 450px;
 	background-repeat: repeat-x;
@@ -120,7 +121,7 @@ body{
 		left: -40px;
 		top: 250px;
 	}to{
-		left: 280px;
+		left: 120px;
 		top: 260px;
 	}
 }
@@ -129,38 +130,39 @@ body{
 	width: 400px;
 	height: 200px;
 	position: absolute;
-	left: 280px;
+	left: 120px;
 	top: 260px;
 	background-image: url("img/Bote.png");
 	background-size: 249px 215px;
 	background-repeat: no-repeat;
 	animation-name: movimientoBarco;
-	animation-duration: 7s;
+	animation-duration: 2s;
 	animation-direction: alternate;
 	animation-timing-function: linear;
 }
 
 /*interogacion*/
 @keyframes interogacion{
-	from{
-		left: -40px;
-		top: 270px;
-	}to{
-		left: 630px;
-		top: 270px;
+	0%{
+		opacity: 0;
+	}50%{
+		opacity: 0;
+	}100%{
+		opacity: 0.9;
 	}
 }
 
-#interogacion{
+#interrogacion{
+	animation-name: interrogacion;
+	background-image: url("img/interrogacion.png");
+	background-repeat: no-repeat;
+	animation-delay: : 5s;
+	animation-iteration-count: 1;
+	display: none;
 	width: 24px;
 	height: 50px;
 	position: absolute;
-	left: 630px;
-	top: 270px;
-	background-image: url("img/interrogacion.png");
-	background-repeat: no-repeat;
-	animation-name: interogacion;
-	animation-delay: 8s;
+	margin-left: 180px;
 }
 
 /*titulo*/
