@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rejillas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<h1 id="tituloDoc">Rejillas</h1>
+<div id="container">
+	<h3>Imágenes responsive</h3>
+	<img src="img/cachorros.jpg" class="img-responsive" alt="img responsive" width="400px" height="400px" id="img1">
+</div>
+<hr>
+<h3>Rejillas de Bootstrap</h3>
+<div class="row">
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div><div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+	<div class="col-md-8">.col-md-8</div>
+	<div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+	<div class="col-md-4">.col-md-4</div>
+	<div class="col-md-4">.col-md-4</div>
+	<div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+	<div class="col-md-6">.col-md-6</div>
+	<div class="col-md-6">.col-md-6</div>
+</div>
+<hr>
+<h3>Rejillas para móviles y ordenadores</h3>
+<p> En los móviles las columnas se muestran verticalmente porque
+una de ellas ocupa toda la anchura del dispositivo y la otra
+columna ocupa la mitad </p>
+<div class="row">
+	<div class="col-xs-12 col-md-8">.col-xs-12 col-md-8</div>
+	<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+<p> En un móvil las columnas ocupan la mitad del dispositivo y en un ordenador ocupan la tercera parte de la anchura disponible </p>
+<div class="row">
+	<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+	<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div><div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+<p> Las columnas ocupan siempre la mitad de la pantalla, tanto en un móvil como en un ordenador de escritorio </p>
+<div class="row">
+	<div class="col-xs-6">.col-xs-6</div>
+	<div class="col-xs-6">.col-xs-6</div>
+</div>
+<hr>
+<h3>Rejillas para móviles, tablets y ordenadores</h3>
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+	<div class="col-xs-6 col-sm-6 col-md-4">.col-xs-6 .col-sm-6 .col-md-4</div>
+</div>
+<div class="row">
+	<div class="col-xs-6 col-sm-4 col-md-4">.col-xs-6 .col-sm-4 .col-md-4</div>
+	<div class="col-xs-6 col-sm-4 col-md-4">.col-xs-6 .col-sm-4 .col-md-4</div>
+	<div class="clearfix visible-xs"></div>
+	<div class="col-xs-6 col-sm-4 col-md-4">.col-xs-6 .col-sm-4 .col-md-4</div>
+</div>
+<hr>
+<h3>Reseteando columnas</h3>
+<p> La clase 'clearfix' sólo se aplica cuando el dispositivo sea
+muy pequeño, tal y como indica la clase 'visible-xs' </p>
+<div class="row">
+	<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+	<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+	<div class="clearfix visible-xs"></div>
+	<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+	<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+</div>	
+<hr>
+<div class="row">
+	<div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+	<div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-
+	offset-2 .col-md-6 .col-md-offset-0</div>
+</div>
+<div class="row">
+	<div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+	<div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6
+	.col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+</div>
+<hr>
+<h3>Desplazando columnas</h3>
+<div class="row">
+	<div class="col-md-4">.col-md-4</div>
+	<div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+</div>
+<div class="row">
+	<div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+	<div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+</div>
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+</div>
+<hr>
+<h3>Anidando columnas</h3>
+<div class="row">
+	<div class="col-md-9">
+		Level 1: .col-md-9
+		<div class="row">
+			<div class="col-md-6">
+				Level 2: .col-md-6
+			</div>
+			<div class="col-md-6">
+				Level 2: .col-md-6
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<h3>Redondeando columnas</h3>
+<div class="row">
+	<div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+	<div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grupos de campos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<h1 id="tituloDoc">Grupos de campos en Bootstrap</h1>
+<h3>Básico</h3>
+<div class="input-group">
+	<span class="input-group-addon">@</span>
+	<input type="text" class="form-control" placeholder="Nombre de usuario">
+</div>
+<div class="input-group">
+	<input type="text" class="form-control">
+	<span class="input-group-addon">.00</span>
+</div>
+<div class="input-group">
+	<span class="input-group-addon">$</span>
+	<input type="text" class="form-control">
+	<span class="input-group-addon">.00</span>
+</div>
+<hr>
+<h3>Tamaños camopos</h3>
+<div class="input-group input-group-lg">
+	<span class="input-group-addon">@</span>
+	<input type="text" class="form-control" placeholder="Nombre de usuario">
+</div>
+<div class="input-group">
+	<span class="input-group-addon">@</span>
+	<input type="text" class="form-control" placeholder="Nombre de usuario">
+</div>
+<div class="input-group input-group-sm">
+	<span class="input-group-addon">@</span>
+	<input type="text" class="form-control" placeholder="Nombre de usuario">
+</div>
+<hr>
+<h3>Adjuntando checkboxes y radiobuttons</h3>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="input-group">
+			<span class="input-group-addon">
+				<input type="checkbox">
+			</span>
+			<input type="text" class="form-control"></div>
+	</div>
+	<div class="col-lg-6">
+		<div class="input-group">
+			<span class="input-group-addon">
+				<input type="radio">
+			</span>
+			<input type="text" class="form-control">
+		</div>
+	</div>
+</div>
+<hr>
+<h3>Adjuntando botones</h3>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="input-group">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button">Buscar</button>
+			</span>
+			<input type="text" class="form-control">
+		</div>
+	</div><div class="col-lg-6">
+		<div class="input-group">
+			<input type="text" class="form-control">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button">Buscar</button>
+			</span>
+		</div>
+	</div>
+</div>
+<hr>
+<h3>Adjuntando botones desplegables</h3>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="input-group">
+			<div class="input-group-btn">
+				<button type="button" class="btn btn-default dropdown-toggle"
+				data-toggle="dropdown">
+				Acción <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">Acción #1</a></li>
+					<li><a href="#">Acción #2</a></li>
+					<li><a href="#">Acción #3</a></li>
+					<li class="divider"></li><li><a href="#">Acción #4</a></li>
+				</ul>
+			</div>
+			<input type="text" class="form-control">
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<div class="input-group">
+			<input type="text" class="form-control">
+			<div class="input-group-btn">
+				<button type="button" class="btn btn-default dropdown-toggle"
+				data-toggle="dropdown">
+				Acción <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu pull-right" role="menu">
+					<li><a href="#">Acción #1</a></li>
+					<li><a href="#">Acción #2</a></li>
+					<li><a href="#">Acción #3</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Acción #4</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<h3>Adjuntando botones compuestos</h3>
+</body>
+</html>

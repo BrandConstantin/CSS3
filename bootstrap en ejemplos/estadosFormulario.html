@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estados formularios</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<h1 id="tituloDoc">Estados de formulario en Bootstrap</h1>
+<h3>Campos seleccionados</h3>
+<input class="form-control" id="inputSeleccionado" type="text" value="Este campo está seleccionado...">
+<h3>Campo deshabilitado</h3>
+<input class="form-control" id="campoDeshabilitado" type="text" placeholder="Este campo está deshabilitado..." disabled>
+<hr>
+<h3>Grupos de campos deshabilitados</h3>
+<form role="form">
+	<fieldset disabled>
+		<div class="form-group">
+			<label for="disabledTextInput">Campo deshabilitado</label>
+			<input type="text" id="campoDeshabilitado" class="form-control"
+		placeholder="Campo deshabilitado">
+		</div>
+		<div class="form-group">
+			<label for="listaDeshabilitada">Lista deshabilitada</label>
+			<select id="listaDeshabilitada" class="form-control">
+				<option>Lista deshabilitada</option>
+			</select>
+		</div>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox"> No puedes pinchar esta opción
+			</label>
+		</div>
+		<button type="submit" class="btn btn-primary">Enviar</button>
+	</fieldset>
+</form>
+<hr>
+<h3>Estados de validación</h3>
+<div class="form-group has-success">
+	<label class="control-label" for="inputSuccess">Campo con un valor válido</label>
+	<input type="text" class="form-control" id="campoValido">
+</div>
+<div class="form-group has-warning">
+	<label class="control-label" for="inputWarning">Campo con una advertencia</label>
+	<input type="text" class="form-control" id="campoAdvertencia">
+</div>
+<div class="form-group has-error">
+	<label class="control-label" for="inputError">Campo con un error</label>
+	<input type="text" class="form-control" id="campoError">
+</div>
+<hr>
+<h3>Redimensionar campos</h3>
+<input class="form-control input-lg" type="text" placeholder=".input-lg">
+<input class="form-control" type="text" placeholder="Campo de texto">
+<input class="form-control input-sm" type="text" placeholder=".input-sm">
+<hr>
+<select class="form-control input-lg">...</select>
+<select class="form-control">...</select>
+<select class="form-control input-sm">...</select>
+<hr>
+<h3>Cambiando anchuras</h3>
+<div class="row">
+	<div class="col-xs-3">
+		<input type="text" class="form-control" placeholder=".col-xs-3">
+	</div>
+	<div class="col-xs-4">
+		<input type="text" class="form-control" placeholder=".col-xs-4">
+	</div>
+	<div class="col-xs-5">
+		<input type="text" class="form-control" placeholder=".col-xs-5">
+		<span class="help-block">Un texto de ayuda que ocupa dos líneas porque es muy largo, pero aún así se ve bien gracias a los estilos de Bootstrap.</span>
+	</div>
+</div>
+</body>
+</html>
