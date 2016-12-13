@@ -1,0 +1,128 @@
+div{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-top: 60px;
+	margin-left: 40px;
+}
+
+.uno{
+	background: linear-gradient(orange, pink);
+}
+
+.dos{
+	background: -webkit-radial-gradient(#0f0, #06f);
+}
+
+.tres{
+	background: linear-gradient(#000, #666);
+}
+
+.cuatro{
+	background: -webkit-linear-gradient(180deg, #fff, #f66);
+}
+
+.cinco{
+	background: linear-gradient(#00f 50%, #000);
+}
+
+.seis{
+	background: linear-gradient(45deg, #66f, #f80, #ffc);
+}
+
+.siete{
+	background: linear-gradient(45deg, #66f 10%, #f80 30%, #ffc 60%);
+}
+
+.ocho{
+	background: linear-gradient(45deg, #66f 40px, #f80 180px, #ffc);
+}
+
+.nueve{
+	background: linear-gradient(#f00, #f80, #ff0, #0f0, #00f, #60f, #c0f);
+}
+
+.diez{
+	background: repeating-linear-gradient(#fff, #666 25%);
+}
+
+/*******************/
+
+.once{
+	background: repeating-linear-gradient(#ffc, #f96 30%, #963 40%, #630 51%);
+}
+
+.doce{
+	background: repeating-linear-gradient(45deg, red, blue, red 50px);
+}
+
+.trece{
+	background: repeating-linear-gradient(#f00, #f80, #ff0, #0f0, #00f, #60f, #c0f, #f00 100px);
+}
+
+
+/*********************/
+
+.catorce{
+	background: radial-gradient(#0f0, #06f);
+}
+
+.quince{
+	background: radial-gradient(#fff, #f66);
+}
+
+.dieciseis{
+	background: radial-gradient(200px 30px, #f0f, #000);
+}
+
+.diecisiete{
+	background: radial-gradient(#00f, #000 50%);
+}
+
+.dieciocho{
+	background: radial-gradient(circle, #66f, #f80, #ffc);
+}
+
+.diecinueve{
+	background: radial-gradient(ellipse #66f, #f80, #ffc);
+}
+
+.veinte{
+	background: radial-gradient(ellipse closest-side, #fff 60%, #f80 85%, #ffc);
+}
+
+.veintiuno{
+	background: radial-gradient(ellipse farthest-corner, #66f 60%, #f80 85%, #ffc);
+}
+
+.veintidos{
+	background: radial-gradient(20px, 100px, 30%, 80%, #fff, #666, #66f);
+}
+
+.veintitres{
+	background: radial-gradient(150px 100px, #ffc, #f96, #963, #630);
+}
+
+.veinticuatro{
+	background: radial-gradient(20%, 80%, 100%, 50%, red, blue, 50px, red);
+}
+
+.veinticinco{
+	background: radial-gradient(200px 200px, #f00 20%, #f80, #ff0, #0f0, #00f, #60f, #c0f);
+}
+
+.veintiseis{
+	background: repeating-radial-gradient(circle, #fff, #666 25%);
+}
+
+.veintisiete{
+	background: repeating-radial-gradient(circle, #ffc, #f96 30%, #963 40%, #630 51%);
+}
+
+.veintiocho{
+	background: repeating-radial-gradient(ellipse closest-side, red, blue, red 50px);
+}
+
+.veintinueve{
+	background: repeating-radial-gradient(ellipse farthest-side, #f00, #f80, #ff0, #0f0, #00f, #60f, #c0f, #f00);
+}
