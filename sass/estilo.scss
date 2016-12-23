@@ -1,0 +1,94 @@
+body{
+	font-size: 2em;
+}
+
+/* anidar reglas css */
+
+#main p {
+	color: #00ff00;
+	width: 97%;
+
+	.redbox {
+		background-color: #ff0000;
+		color: #000000;
+	}
+}
+
+/* hacer referencia selector padre */
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	&:hover { text-decoration: underline; }
+	body.firefox & { font-weight: normal; }
+}
+
+/* sufijo que se aplica al selector padre */
+
+#main {
+	color: black;
+	&-sidebar { border: 1px solid; }
+}
+
+/* atajos para propriedades anidadas */
+
+.funky {
+	font: {
+		family: fantasy;
+		size: 30em;weight: bold;
+	}
+}
+
+/* aplicar un valor al grupo de propriedades */
+
+.dunky {
+	font: 2px/3px {
+		family: fantasy;
+		size: 30em;
+		weight: bold;
+	}
+}
+
+/* nombrar una variable y utilizarla */
+$width: 3em;
+
+#main{
+	width: $width;
+}
+
+/* cadenas de texto */
+
+@mixin firefox-message($selector) {
+	body.firefox #{$selector}:before {
+		content: "Hi, Firefox users!";
+	}
+}
+
+/* una lista utilizando funciones */
+$idLista: '#id1', '#id2', '#id3';
+@each $elemento in $idLista {
+	#{$elemento} {
+		color:red
+	}
+}
+
+/* ejemplo de mapas (asociando colores a botones de redes sociales) */
+$social: (
+	facebook: #3b5998,
+	github: #4183c4,
+	googleplus: #dd4b39,
+	linkedin: #007bb6,
+	twitter: #00aced,youtube: #b00,
+	rss: #f60
+);
+
+@each $social, $bgcolor in $social {
+	.social--#{$social} {
+		background-color: $bgcolor;
+	}
+}
+
+/* operadores convertidos */
+p {
+	width: 1in + 8pt;
+}
