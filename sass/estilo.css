@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans");
 body {
   font-size: 2em; }
 
@@ -77,5 +79,128 @@ a {
 /* operadores convertidos */
 p {
   width: 1.11111in; }
+
+p {
+  /* El carácter '/' se interpreta como código CSS normal*/
+  font: 10px/8px;
+  /* El carácter '/' se interpreta como una división
+  width: $width/2; */
+  /* Uno de los operandos es una variable
+  width: round(1.5)/2; */
+  /*Uno de los operados es el resultado de una función
+  height: (500px/2); */
+  /* Los parénteis encierran la expresión
+  margin-left: 5px + 8px/2px; */
+  /* El '+' indica que es una expresión matemática*/ }
+
+p {
+  font: 12px/30px; }
+
+/* sumar colores */
+p {
+  color: rgba(255, 255, 0, 0.75); }
+
+/* funciones opacify y transparentize */
+p {
+  color: rgba(255, 255, 0, 0.7);
+  background-color: rgba(255, 255, 0, 0.1); }
+
+/* concatenar cadenas de texto */
+p:before {
+  content: "Foo Bar";
+  font-family: sans-serif; }
+
+p:before {
+  content: "¡Me he comido 15 pasteles!"; }
+
+/* funciones */
+p {
+  color: red; }
+
+/* interpolación */
+p.foo {
+  border-color: blue; }
+
+/* variable con valor por defecto */
+#main {
+  contenido: "Primer contenido";
+  nuevo-contenido: "Tercer contenido"; }
+
+/* importar archivos con interpolación */
+/* @media */
+.sidebar {
+  width: 300px; }
+  @media screen and (orientation: landscape) {
+    .sidebar {
+      width: 500px; } }
+
+/* reglas media anidadas */
+@media screen and (orientation: landscape) {
+  .sidebar {
+    width: 500px; } }
+
+/* reglas @media conteniendo expresiones SassScript */
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .sidebar {
+    width: 500px; } }
+/* @extend */
+.error, .seriousError {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+.seriousError {
+  border-width: 3px; }
+
+/* !optional */
+@media print {
+  .page {
+    width: 8in; } }
+  .page {
+    color: red; }
+
+/* directiva @if */
+p {
+  border: 1px solid; }
+
+/* directiva @for */
+.item-1 {
+  width: 2em; }
+
+.item-2 {
+  width: 4em; }
+
+.item-3 {
+  width: 6em; }
+
+/* directiva @each */
+.puma-icon {
+  background-image: url("/images/puma.png"); }
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png"); }
+
+.egret-icon {
+  background-image: url("/images/egret.png"); }
+
+.salamander-icon {
+  background-image: url("/images/salamander.png"); }
+
+/* directiva @while */
+.item-6 {
+  width: 12em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-2 {
+  width: 4em; }
+
+/* @mixin */
+/* también pueden contener selectores, o hacer referencia al selector padre */
+/* mixin con argumentos */
+.shadows {
+  -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  box-shadow: 0px 4px 5px #666, 2px 6px 10px #999; }
 
 /*# sourceMappingURL=estilo.css.map */

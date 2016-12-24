@@ -92,3 +92,211 @@ $social: (
 p {
 	width: 1in + 8pt;
 }
+
+p {
+	/* El carácter '/' se interpreta como código CSS normal*/
+	font: 10px/8px;
+	$width: 1000px;
+
+	/* El carácter '/' se interpreta como una división
+	width: $width/2; */
+
+	/* Uno de los operandos es una variable
+	width: round(1.5)/2; */
+
+	/*Uno de los operados es el resultado de una función
+	height: (500px/2); */
+
+	/* Los parénteis encierran la expresión
+	margin-left: 5px + 8px/2px; */
+
+	/* El '+' indica que es una expresión matemática*/
+}
+
+p {
+	$font-size: 12px;
+	$line-height: 30px;
+	font: #{$font-size}/#{$line-height};
+}	
+
+/* sumar colores */
+p {
+	color: rgba(255, 255, 0, 0.75);
+}
+
+/* funciones opacify y transparentize */
+$color: rgba(255, 255, 0, 0.5);
+
+p{
+	color:opacify($color, 0.2);
+	background-color: transparentize($color, 0.4);
+}
+
+/* concatenar cadenas de texto */
+
+p:before {
+	content: "Foo " + Bar;
+	font-family: sans- + "serif";
+}
+
+p:before {
+	content: "¡Me he comido #{5 + 10} pasteles!";
+}
+
+/* funciones */
+p{
+	color:hsl($hue: 0, $saturation: 100%, $lightness: 50%);
+}
+
+/* interpolación */
+$name: foo;
+$attr: border;
+
+p.#{$name}{
+	#{$attr}-color: blue;
+}
+
+/* variable con valor por defecto */
+$contenido: "Primer contenido";
+$contenido: "¿Segundo contenido?" !default;
+$nuevo_contenido: "Tercer contenido" !default;
+
+#main {
+	contenido: $contenido;
+	nuevo-contenido: $nuevo_contenido;
+}
+
+/* importar archivos con interpolación */
+$family: unquote("Droid+Sans");
+@import url("http://fonts.googleapis.com/css?family=#{$family}");
+
+/* @media */
+
+.sidebar {
+	width: 300px;
+	@media screen and (orientation: landscape) {
+		width: 500px;
+	}
+}
+
+/* reglas media anidadas */
+@media screen {
+	.sidebar {
+		@media (orientation: landscape) {
+			width: 500px;
+		}
+	}
+}
+
+/* reglas @media conteniendo expresiones SassScript */
+$media: screen;
+$feature: -webkit-min-device-pixel-ratio;
+$value: 1.5;
+
+@media #{$media} and ($feature: $value) {
+	.sidebar {
+		width: 500px;
+	}
+}
+
+/* @extend */
+.error {
+	border: 1px #f00;
+	background-color: #fdd;
+}
+
+.seriousError {
+	@extend .error;
+	border-width: 3px;
+}
+
+/* !optional */
+a.important {
+	@extend .notice !optional;
+}
+
+@media print {
+	.page {
+		width: 8in;
+			@at-root (without: media) {color: red;
+		}
+	}
+}
+
+/* directiva @if */
+p {
+	@if 1 + 1 == 2 { 
+		border: 1px solid;
+	}
+	@if 5 < 3 { 
+		border: 2px dotted; 
+	}
+	@if null {
+		border: 3px double; 
+	}
+}
+
+/* directiva @for */
+@for $i from 1 through 3 {
+	.item-#{$i} { 
+		width: 2em * $i; 
+	}
+}
+
+/* directiva @each */
+@each $animal in puma, sea-slug, egret, salamander {
+	.#{$animal}-icon {
+		background-image: url('/images/#{$animal}.png');
+	}
+}
+
+/* directiva @while */
+$i: 6;
+
+@while $i > 0 {
+	.item-#{$i} { 
+		width: 2em * $i; 
+	}
+	$i: $i - 2;
+}
+
+/* @mixin */
+@mixin large-text {
+	font: {
+		family: Arial;
+		size: 20px;
+		weight: bold;
+	}
+	color: #ff0000;
+}
+
+/* también pueden contener selectores, o hacer referencia al selector padre */
+@mixin clearfix {
+	display: inline-block;
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	* html & { height: 1px }
+}
+
+/* mixin con argumentos */
+@mixin sexy-border($color, $width) {
+	border: {
+		color: $color;
+		width: $width;
+		style: dashed;
+	}
+}
+
+@mixin box-shadow($shadows...) {
+	-moz-box-shadow: $shadows;
+	-webkit-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+.shadows {
+	@include box-shadow(0px 4px 5px #666, 2px 6px 10px #999);
+}
