@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="practica1.svg">
+   sodipodi:docname="practica1.svg"
+   inkscape:export-filename="/home/costy/Documents/css-avanzado/css-avanzado/inkscape/practica1.svg.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -35,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.90902492"
-     inkscape:cx="467.13461"
-     inkscape:cy="334.81158"
+     inkscape:zoom="0.78715158"
+     inkscape:cx="457.25736"
+     inkscape:cy="330.80493"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
