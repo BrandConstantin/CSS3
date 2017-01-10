@@ -4,18 +4,30 @@
 	<meta charset="utf-8">
 	<title>Practica 2</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function play(){
+			document.getElementById('player').play();
+			document.getElementById("player").style.animation = "animationAltav 0.3 infinite";
+		}
+		function stop(){
+			document.getElementById("player").currentTime = 0;
+			document.getElementById("player").pause();
+		}
+	</script>
 </head>
 <body>
 <div id="reproductor">
 	<audio id="player" src="CamelPhat   Constellations (Extended mix).mp3"></audio>
-<div>
-
-	<button id="play" onclick="document.getElementById('player').play()"></button>
-	<button id="pause" onclick="document.getElementById('player').pause()"></button>
-	<button id="stop" onclick="document.getElementById('player').volume += 0.1"></button>
-	<button id="bigVol" onclick="document.getElementById('player').volume += 0.1"></button>
-	<button id="littleVol" onclick="document.getElementById('player').volume -= 0.1"></button>
-</div>
+	<h1>AudioPlayer</h1>
+	<hr>
+	<div>
+		<button id="play" onclick="play()"></button>
+		<button id="pause" onclick="document.getElementById('player').pause()"></button>
+		<button id="stop" onclick="stop()"></button>
+		<button id="bigVol" onclick="document.getElementById('player').volume += 0.1"></button>
+		<button id="littleVol" onclick="document.getElementById('player').volume -= 0.1"></button>
+	</div>
+	<div id="altavoz"></div>
 </div>
 </body>
 </html>

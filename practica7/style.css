@@ -24,39 +24,70 @@ button{
 }
 
 #play{
-	top: 115px;
-	margin-left: 30px;
+	top: 130px;
+	margin-left: 80px;
 	background-position: -2px -2px;
+}
+
+#play:hover{
+	background-position: -1px -42px;
 }
 
 #pause{
 	background-position: -42px -2px;
-	top: 115px;
-	margin-left: 80px;
+	top: 130px;
+	margin-left: 130px;
+}
+
+#pause:hover{
+	background-position: -41px -42px;
 }
 
 #stop{
 	background-position: -81px -2px;
-	top: 115px;
-	margin-left: 130px;	
+	top: 130px;
+	margin-left: 180px;	
+}
+
+#stop:hover{
+	background-position: -81px -42px;
 }
 
 #bigVol{
 	background-position: -121px -2px;
-	top: 115px;
-	margin-left: 180px;	
+	top: 130px;
+	margin-left: 230px;	
+}
+
+#bigVol:hover{
+	background-position: -121px -42px;
 }
 
 #littleVol{
 	background-position: -162px -2px;
-	top: 115px;
-	margin-left: 230px;	
+	top: 130px;
+	margin-left: 280px;	
+}
+
+#littleVol:hover{
+	background-position: -161px -42px;
 }
 
 #altavoz{
-	background-position: -159px 0px;
-	top: 100px;
-	margin-left: 210px;		
-	width: 150px;
-	height: 150px;
+	background-image: url("img/altavoz.png");
+	margin: 0 auto;
+	margin-top: 60px;		
+	width: 95px;
+	height: 95px;
+}
+
+hr{
+	width: 80%;
+	margin-top: 5px;
+}
+
+h1{
+	color: #fff;
+	opacity: 0.7;
+	text-align: center;
 }
