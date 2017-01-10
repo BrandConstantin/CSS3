@@ -1,0 +1,62 @@
+#reproductor{
+	width: 400px;
+	height: 240px;
+	background-color: #000;
+	opacity: 0.6;
+	border-radius: 150px 65px 65px 65px;
+	-moz-border-radius: 150px 65px 65px 65px;
+	-webkit-border-radius: 150px 65px 65px 65px;
+	border: 23px solid #0e6d96;
+	margin: 0 auto;
+}
+
+button{
+	position: absolute;
+}
+
+#play, #pause, #stop, #bigVol, #littleVol, #altavoz{
+	width: 42px;
+	height: 42px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-image: url("img/btns.png");
+	border-radius: 50%;
+}
+
+#play{
+	top: 115px;
+	margin-left: 30px;
+	background-position: -2px -2px;
+}
+
+#pause{
+	background-position: -42px -2px;
+	top: 115px;
+	margin-left: 80px;
+}
+
+#stop{
+	background-position: -81px -2px;
+	top: 115px;
+	margin-left: 130px;	
+}
+
+#bigVol{
+	background-position: -121px -2px;
+	top: 115px;
+	margin-left: 180px;	
+}
+
+#littleVol{
+	background-position: -162px -2px;
+	top: 115px;
+	margin-left: 230px;	
+}
+
+#altavoz{
+	background-position: -159px 0px;
+	top: 100px;
+	margin-left: 210px;		
+	width: 150px;
+	height: 150px;
+}
