@@ -7,8 +7,10 @@
 	<script type="text/javascript">
 		function play(){
 			document.getElementById('player').play();
-			document.getElementById("player").style.animation = "animationAltav 0.3 infinite";
+			document.getElementById("duracion").duration();
+			document.getElementById("altavoz").style.animation = "mover";
 		}
+
 		function stop(){
 			document.getElementById("player").currentTime = 0;
 			document.getElementById("player").pause();
@@ -19,6 +21,7 @@
 <div id="reproductor">
 	<audio id="player" src="CamelPhat   Constellations (Extended mix).mp3"></audio>
 	<h1>AudioPlayer</h1>
+	<div id="duracion"></div>
 	<hr>
 	<div>
 		<button id="play" onclick="play()"></button>
