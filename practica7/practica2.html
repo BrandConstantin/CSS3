@@ -7,7 +7,6 @@
 	<script type="text/javascript">
 		function play(){
 			document.getElementById('player').play();
-			document.getElementById("duracion").duration();
 			document.getElementById("altavoz").style.animation = "mover";
 		}
 
@@ -15,13 +14,18 @@
 			document.getElementById("player").currentTime = 0;
 			document.getElementById("player").pause();
 		}
+
+		function duration(){
+			var dSong = document.getElementById("player");
+			alert(dSong.duration);
+		}
 	</script>
 </head>
 <body>
 <div id="reproductor">
 	<audio id="player" src="CamelPhat   Constellations (Extended mix).mp3"></audio>
 	<h1>AudioPlayer</h1>
-	<div id="duracion"></div>
+	<button onclick="duration()" type="button" id="duration">Tiempo Video</button>
 	<hr>
 	<div>
 		<button id="play" onclick="play()"></button>
@@ -30,7 +34,7 @@
 		<button id="bigVol" onclick="document.getElementById('player').volume += 0.1"></button>
 		<button id="littleVol" onclick="document.getElementById('player').volume -= 0.1"></button>
 	</div>
-	<div id="altavoz"></div>
+	<div id="altavoz"></div>	
 </div>
 </body>
 </html>

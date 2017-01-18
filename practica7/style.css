@@ -84,12 +84,12 @@ button{
 #altavoz{
 	background-image: url("img/altavoz.png");
 	margin: 0 auto;
-	margin-top: 60px;		
+	margin-top: 75px;		
 	width: 95px;
 	height: 95px;
 	-ms-transform: scale(0.9, 1); /* IE 9 */
 	-webkit-transform: scale(0.9, 1); /* Safari */
-	transform: scale(0.9, 1);
+	transform: scale(1, 1);
 	animation-name: mover;
 	animation-duration: 0.4s;
 	animation-iteration-count: infinite;
@@ -119,10 +119,9 @@ h1{
 	text-align: center;
 }
 
-#duracion{
-	background-color: #fff;
-	width: 50px;
-	height: 15px;
-	margin-left: 50px;
-	margin-top: 5px;
+#duration{
+	background-color: grey;
+	margin-left: 40px;
+	margin-top: -25px;
+	color: #fff;
 }
