@@ -11,7 +11,7 @@ function iniciar(){
 	//stroke() dibuja el contorno del trazado
 	//fill() dubuja el trazado como una figura sólida
 	//clip() declara una nueva área de corte para el contexto
-
+	//1
 	lienzo.beginPath();
 	lienzo.moveTo(100, 100);
 	lienzo.lineTo(300, 300);
@@ -24,8 +24,22 @@ function iniciar(){
 		lienzo.lineTo(500, i);
 	}
 	//lienzo.closePath();
-	lienzo.stroke();
+	//lienzo.stroke();
 	//lienzo.fill();
+	//2
+	//lienzo.beginPath();
+	//lienzo.moveTo(left, top);
+	lienzo.moveTo(600, 100);
+	lienzo.lineTo(50, 10);
+	lienzo.lineTo(500, 200);
+	lienzo.stroke();
+	lienzo.beginPath();
+	for (i = 0; i < 300; i += 10) {
+		lienzo.moveTo(0, i);
+		lienzo.lineTo(500, i);
+	}
+	//lienzo.closePath();
+	lienzo.stroke();
 }
 
 //cuando se carga la página llama a la función iniciar

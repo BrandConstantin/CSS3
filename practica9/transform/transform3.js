@@ -2,13 +2,14 @@ function iniciar(){
 	var elemento = document.getElementById('lienzo');
 
 	lienzo = elemento.getContext('2d');
-	lienzo.strokeRect(0, 0, elemento.width, elemento.height);
 	
-	lienzo.fillStyle = "red";
-	lienzo.moveTo(50, 50);
-	lienzo.lineTo(100, 20);
-	lienzo.lineTo(100, 40);
-	lienzo.stroke();
+	lienzo.save();
+	lienzo.translate(40, 70);
+	lienzo.font = "bold 24px verdana, sans-serif";
+	lienzo.fillText('PRUEBA1', 20, 20);
+	lienzo.restore();
+	lienzo.fillText('PRUEBA2', 40, 40);
+
 }
 
 //cuando se carga la página llama a la función iniciar

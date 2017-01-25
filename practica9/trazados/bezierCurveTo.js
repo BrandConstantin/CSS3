@@ -10,15 +10,9 @@ function iniciar(){
 	//bezierCurveTo
 
 	lienzo.beginPath();
-	//lienzo.arc(100, 100, 50, 0, Math.PI*2, false);
-	/*lienzo.arc(100, 100, 50, 0, Math.PI, false);
-	lienzo.arc(100, 100, 50, 0, Math.PI, true);
-	lienzo.stroke();*/
-
-	lienzo.moveTo(50, 50);
-	lienzo.quadraticCurveTo(500, 125, 150, 250);
 	lienzo.moveTo(250, 50);
-	lienzo.bezierCurveTo(200, 125, 300, 125, 250, 200);
+	//lienzo.bezierCurveTo(4 puntos para moldear, punto inicial y final);
+	lienzo.bezierCurveTo(50, 125, 450, 125, 250, 200);
 	lienzo.stroke();
 }
 
