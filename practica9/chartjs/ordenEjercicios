@@ -1,0 +1,10 @@
+1. Line - (grafico en linea)
+2. Line - (grafico en linea con colores)
+3. Bar - (grafico de barras)
+4. Polar Area - (grafico tipo tela araña)
+5. Radar - (grafico de radar)
+6. Pie - (grafico circular)
+7. Doughnut - (grafico circular - forma rosquilla)
+8. Mostrar valor en consola de cada elemento
+9. Rebajar valor del primer elemento
+10. Eliminar todos los elementos empezando con el primero 

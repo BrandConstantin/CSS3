@@ -38,4 +38,4 @@ function procesarCuadros(){
 	}
 
 	lienzo.putImageData(info, 0, 0);
-}window.addEventListener("load", iniciar, false)
+}window.addEventListener("load", iniciar, false);
