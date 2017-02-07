@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg width="250" height="200">
+        <defs>
+            <g id="flor">
+                <title>flor</title>
+                <desc>Una flor hecha de circulos</desc>
+                <circle cx="150" cy="100" r="20"></circle>
+                <circle cx="138" cy="122" r="20"></circle>
+                <circle cx="113" cy="122" r="20"></circle><circle cx="100" cy="101" r="20"></circle>
+                <circle cx="112" cy="78" r="20"></circle>
+                <circle cx="138" cy="78" r="20"></circle>
+                <path d="M130,100 a20,20 0 1,1 40,0"></path>
+            </g>
+        </defs>
+        <g stroke="#900">
+            <!--esto no es prendicible ponerlo 
+                xmlns:xlink="http://www.w3.org/1999/xlink"-->
+            <use xlink:href="#flor" fill="red" x="-75" y="-50"></use>
+            <use xlink:href="#flor" fill="Gold" x="-60" y="0"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#flor" fill="MediumOrchid" x="55" y="-50"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#flor" fill="CornflowerBlue"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#flor" fill="DeepPink" x="25" y="55"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#flor" fill="DarkOrange" x="75" y="0"></use>
+        </g>
+    </svg>
+</body>
+
+</html>
