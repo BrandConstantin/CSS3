@@ -23,7 +23,7 @@
             var sonido;
 
             //la representación puede ser Phaser.AUTO, Phaser.WEBGL o Phaser.CANVAS
-            var game = new Phaser.Game(800, 600, Phaser.GAME, '', {
+            var game = new Phaser.Game(800, 600, Phaser.CANVAS, '', {
                 preload: preload,
                 create: create,
                 update: update
@@ -33,7 +33,7 @@
                 game.load.image('star', 'assets/star.png');
                 game.load.image('sky', 'assets/sky.png');
                 game.load.image('ground', 'assets/platform.png');
-                game.load.image('dude', 'assets/dude.png', 32, 48);
+                game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
                 game.load.audio('spop', 'assets/pop.mp3'); //cargamos sonido
             }
 
@@ -74,12 +74,12 @@
                 //las veces que rebota
                 player.body.bounce.y = 0.4;
                 //la velocidad de caida
-                player.body.gravity.y = 500; 
+                player.body.gravity.y = 500;
                 player.body.collideWorldBounds = true;
 
                 //la animación anda hacia derecha y hacia izquierda
                 //es el orden de los muñequitos en el array, cojido del sprite
-                player.animations.add('left', [0, 1, 2, 3], 10, true); 
+                player.animations.add('left', [0, 1, 2, 3], 10, true);
                 //player.animations.add('center', [4], 10, true); 
                 player.animations.add('right', [5, 6, 7, 8], 10, true);
 
@@ -87,9 +87,9 @@
                 //stars
                 stars = game.add.group();
                 stars.enableBody = true;
-                
+
                 // creamos 12 estrellas
-                for (var i = 0; i < 12; i++){
+                for (var i = 0; i < 12; i++) {
                     // crear estrellas dentro del grupo de estrellas
                     var star = stars.create(i * 70, 0, 'star');
                     // la graveda de caida de las estrellas
@@ -99,12 +99,15 @@
                 }
 
                 //añadimos el texto
-				scoreText = game.add.text(40, 20, 'score: 0', { fontSize: '32px', fill: '#fff' });
-				//añadimos el sonido
-				sonido = game.add.audio('spop');
+                scoreText = game.add.text(40, 20, 'score: 0', {
+                    fontSize: '32px',
+                    fill: '#fff'
+                });
+                //añadimos el sonido
+                sonido = game.add.audio('spop');
             }
 
-            function update(){
+            function update() {
                 //para que el jugador colisiones con el suelo y que permanezca alli
                 game.physics.arcade.collide(player, platforms);
 
@@ -113,20 +116,20 @@
 
                 //resetear la velocidad del jugador
                 player.body.velocity.x = 0;
-                
-				if (cursors.left.isDown) { 
-					//mueve a la izquierda 
-					player.body.velocity.x = -150; 
-					player.animations.play('left'); 
-				} else if (cursors.right.isDown) { 
-					// mueve a la derecha
-					player.body.velocity.x = 150; 
-					player.animations.play('right'); 
-				} else { 
-					player.animations.stop(); 
-					player.frame = 4; 
-				}
-                
+
+                if (cursors.left.isDown) {
+                    //mueve a la izquierda 
+                    player.body.velocity.x = -150;
+                    player.animations.play("left");
+                } else if (cursors.right.isDown) {
+                    // mueve a la derecha
+                    player.body.velocity.x = 150;
+                    player.animations.play("right");
+                } else {
+                    player.animations.stop();
+                    player.frame = 4;
+                }
+
                 // permite saltar al muñequito si esta tocando el suelo
                 if (cursors.up.isDown && player.body.touching.down) {
                     //la altura de saltar
@@ -134,13 +137,13 @@
                 }
 
                 //para detener las estrellas en la plataformas
-				game.physics.arcade.collide(stars, platforms);
-				//para comprobar que el jugador se superpone con una estrella
-				game.physics.arcade.overlap(player, stars, collectStar, null, this);
+                game.physics.arcade.collide(stars, platforms);
+                //para comprobar que el jugador se superpone con una estrella
+                game.physics.arcade.overlap(player, stars, collectStar, null, this);
             }
 
             //función para añadir la puntuación
-            function collectStar (player, star) {
+            function collectStar(player, star) {
                 star.kill();
                 sonido.play();
 
