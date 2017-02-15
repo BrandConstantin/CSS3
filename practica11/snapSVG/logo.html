@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="snap.svg-min.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var s = Snap("#svg");
+
+            Snap.load("logo.svg", function(f) {
+                amarillo = f.select("#amarillo");
+                logo = f.select("#logo");
+
+                logo.hover(function() {
+                        amarillo.animate({
+                            width: 40,
+                            height: 35
+                        }, 1000, mina.elastic);
+                    },
+                    function() {
+                        amarillo.animate({
+                            width: 243.80952,
+                            height: 163.31738,
+                            x: 278.80609,
+                            y: 437.5889
+
+                        }, 1000, mina.elastic);
+                    });
+                s.append(logo);
+                //logo.drag();
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <svg width="800" height="800" id="svg"></svg>
+</body>
+
+</html>
