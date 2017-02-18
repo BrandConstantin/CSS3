@@ -1,4 +1,5 @@
 var polarData = [{
+    //El value indica el tamaño de los trozos
     value: 300,
     color: "#F7464A",
     highlight: "#FF5A5E",
@@ -25,4 +26,5 @@ var polarData = [{
     label: "Dark Grey"
 }];
 
+//lamando a Polar
 var Polar = new Chart(document.getElementById("canvas").getContext("2d")).PolarArea(polarData);

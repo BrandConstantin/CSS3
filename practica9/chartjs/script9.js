@@ -22,8 +22,12 @@ lienzo = elemento.getContext('2d');
 
 var Linea = new Chart(lienzo).Line(LineChart, { scaleFontSize: 13, scaleFontColor: "#ffa45e" });
 
-//cambia el valor una sola vez
+//con click
 canvas.onclick = function(evt) {
-    Linea.datasets[0].points[0].value = 5;
+	//cambia el valor del datasets 0, es decir elemento 1 / Elem1
+	//el valor lo cambia de 30 establecido al principio a 15
+    //el valor cambia una sola vez
+    Linea.datasets[0].points[0].value = 15;
+	//actualiza los datos
     Linea.update();
 };

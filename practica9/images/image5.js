@@ -15,7 +15,9 @@ function modificarImagen(e){
 	var info = lienzo.createPattern(imagen, 'repeat');
 	
 	lienzo.fillStyle = info;
-	lienzo.fillRect(150, 150, 400, 300);
+	//50 left y 180 top de donde se hara el recorte en la imágen original
+	//700 width y 200 height el tamaño del recorte
+	lienzo.fillRect(50, 180, 700, 200);
 
 //cuando se carga la página llama a la función iniciar
 }window.addEventListener("load", iniciar, false)

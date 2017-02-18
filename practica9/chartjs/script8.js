@@ -22,7 +22,8 @@ lienzo = elemento.getContext('2d');
 
 var Linea = new Chart(lienzo).Line(LineChart, { scaleFontSize: 13, scaleFontColor: "#ffa45e" });
 
-//elimina de primero a ultimo
+//con dobleckick
+//elimina de primero a ultimo de los elementos
 canvas.ondblclick = function(evt) {
     Linea.removeData();
     Linea.update();

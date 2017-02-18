@@ -10,18 +10,22 @@ function animacion(e){
 
 	var xraton = e.clientX; 
 	var yraton = e.clientY;
-
+	
+	//el centro donde apareceran los ojos
 	var xcentro = 220;
 	var ycentro = 150;
 
 	var angulo = Math.atan2(xraton - xcentro, yraton - ycentro);
-
+	
+	//alrededor de los 30px es por donde daran la vuelta los ojos
 	var x = xcentro + Math.round(Math.sin(angulo) * 10);
 	var y = ycentro + Math.round(Math.cos(angulo) * 10);
 
 	lienzo.beginPath();
+	//el tamaño del globulo del ojo
 	lienzo.arc(xcentro, ycentro, 20, 0, Math.PI * 2, false);
 	lienzo.moveTo(xcentro + 70, 150);
+	//el tamaño del segundo globulo y la distancia donde aparece
 	lienzo.arc(xcentro + 50, 150, 20, 0, Math.PI * 2, false);
 	lienzo.stroke();
 

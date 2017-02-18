@@ -3,28 +3,27 @@ function iniciar(){
 
 	lienzo = elemento.getContext('2d');
 	lienzo.strokeRect(0, 0, elemento.width, elemento.height);
-
-	//fillRect un rectangulo relleno de color
+	
 	//strokeRect un rectangulo vacio
+	//10 left y 50 top
+	//120 width y 120 height
+	lienzo.strokeRect(10, 50, 120, 120);
+	//fillRect un rectangulo relleno de color
+	lienzo.fillRect(130, 50, 100, 100);
 	//clearRect borrar pixeles a una area especifica en el lienzo
-
-	lienzo.strokeRect(100, 100, 120, 120);
-	lienzo.fillRect(110, 110, 100, 100);
-	lienzo.clearRect(120, 120, 80, 80);
+	lienzo.clearRect(170, 90, 20, 20);
 
 	//strokeStyle color del contorno
-	//fillStyle color del interior de la figula
-	//globalAlpha define transparencia
-
-	lienzo.strokeStyle = 'darkgreen';
+	lienzo.strokeStyle = 'black';
+	//fillStyle color del interior de la figura
 	lienzo.fillStyle = 'lightblue';
-	lienzo.globalAlpha = 0.3;
-	lienzo.strokeRect(100, 100, 120, 120);
-	lienzo.fillRect(110, 110, 100, 100);
+	//globalAlpha define transparencia
+	lienzo.globalAlpha = 0.6;
+	lienzo.fillRect(230, 50, 100, 100);
 
 	//gradiente
-	//createLinearGradient(0, 0, 100, 100);
-	//createRadialGradient(0, 0, 50, 10, 10, 100);
+	//createLinearGradient(170, 50, 100, 100);
+	//createRadialGradient(110, 110, 50, 10, 10, 100);
 	//gradiente.addColorStop(0.25, '#000');
 }
 

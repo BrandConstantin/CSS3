@@ -20,4 +20,7 @@ var elemento = document.getElementById('canvas');
 
 lienzo = elemento.getContext('2d');
 
+//lamando a Bar, que traza barras
+//scaleFontSize el tamaño de las letras y números
+//scaleFontColor es el color de los números y letras indicativas
 new Chart(lienzo).Bar(LineChart, { scaleFontSize: 13, scaleFontColor: "#ffa45e" });

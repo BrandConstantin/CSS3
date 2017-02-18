@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Practica 2</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript">
-		function play(){
-			document.getElementById('player').play();
-			document.getElementById("altavoz").style.animation = "mover";
-		}
+    <meta charset="utf-8">
+    <title>Practica 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function play() {
+            document.getElementById('player').play();
+            document.getElementById("altavoz").style.animation = 'mover';
+        }
 
-		function stop(){
-			document.getElementById("player").currentTime = 0;
-			document.getElementById("player").pause();
-		}
+        function stop() {
+            document.getElementById("player").currentTime = 0;
+            document.getElementById("player").pause();
+        }
 
-		function duration(){
-			var dSong = document.getElementById("player");
-			alert(dSong.duration);
-		}
-	</script>
+        function duration() {
+            var dSong = document.getElementById("player");
+            alert(dSong.duration);
+        }
+    </script>
 </head>
+
 <body>
-<div id="reproductor">
-	<audio id="player" src="CamelPhat   Constellations (Extended mix).mp3"></audio>
-	<h1>AudioPlayer</h1>
-	<button onclick="duration()" type="button" id="duration">Tiempo Video</button>
-	<hr>
-	<div>
-		<button id="play" onclick="play()"></button>
-		<button id="pause" onclick="document.getElementById('player').pause()"></button>
-		<button id="stop" onclick="stop()"></button>
-		<button id="bigVol" onclick="document.getElementById('player').volume += 0.1"></button>
-		<button id="littleVol" onclick="document.getElementById('player').volume -= 0.1"></button>
-	</div>
-	<div id="altavoz"></div>	
-</div>
+    <div id="reproductor">
+        <audio id="player" src="CamelPhat   Constellations (Extended mix).mp3"></audio>
+        <h1>AudioPlayer</h1>
+        <button onclick="duration()" type="button" id="duration">Tiempo Video</button>
+        <hr>
+        <div>
+            <button id="play" onclick="play()"></button>
+            <button id="pause" onclick="document.getElementById('player').pause()"></button>
+            <button id="stop" onclick="stop()"></button>
+            <button id="bigVol" onclick="document.getElementById('player').volume += 0.1"></button>
+            <button id="littleVol" onclick="document.getElementById('player').volume -= 0.1"></button>
+        </div>
+        <div class="altavoz"></div>
+    </div>
 </body>
+
 </html>

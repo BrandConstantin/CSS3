@@ -6,11 +6,11 @@ function iniciar(){
 	var imagen = new Image();
 
 	imagen.src = 'tux.png';
-	/*imagen.addEventListener('load', function(){
-		//lienzo.drawImage(imagen, 0, 0, elemento.width / 2, elemento.height / 2);
-		lienzo.drawImage(imagen, 0, 0, elemento.width = 200, elemento.height = 200);
-	}, true);*/
-	lienzo.drawImage(imagen, 350, 250, 200, 200, 10, 10, 200, 200);
+	//500 left y 500 top es la parte de la imágen original de donde se extraera una parte más pequeña
+	//80 y 80 es el zoom que se le hace a la imágen
+	//100 left y 120 top donde aparece la imágen dentro del lienzo
+	//400 width y 100 height, es el tamaño del trozo recortado
+	lienzo.drawImage(imagen, 500, 500, 80, 80, 100, 120, 400, 100);
 }
 
 //cuando se carga la página llama a la función iniciar

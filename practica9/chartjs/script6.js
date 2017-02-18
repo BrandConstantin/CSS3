@@ -1,5 +1,6 @@
 var pieData = [{
-    value: 300,
+    //El value indica el tamaño de los trozos
+    value: 100,
     color: "#F7464A",
     highlight: "#FF5A5E",
     label: "Red"
@@ -14,15 +15,16 @@ var pieData = [{
     highlight: "#FFC870",
     label: "Yellow"
 }, {
-    value: 40,
+    value: 50,
     color: "#949FB1",
     highlight: "#A8B3C5",
     label: "Grey"
 }, {
-    value: 120,
+    value: 100,
     color: "#4D5360",
     highlight: "#616774",
     label: "Dark Grey"
 }];
 
-var Pie = new Chart(document.getElementById("canvas").getContext("2d")).Pie(pieData, { pointLabelFontSize: 13, pointLabelFontColor: "#ffa45e" });
+//llama a Pie, que son trozos que juntos forman un circulo
+var Pie = new Chart(document.getElementById("canvas").getContext("2d")).Pie(pieData, { pointLabelFontSize: 16, pointLabelFontColor: "#000" });

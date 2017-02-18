@@ -7,6 +7,7 @@ function iniciar(){
 
 	imagen.src = 'tux.png';
 	imagen.addEventListener('load', function(){
+		//la distancia left/top donde aparecera la imagen
 		lienzo.drawImage(imagen, 10, 80);
 	}, true);
 

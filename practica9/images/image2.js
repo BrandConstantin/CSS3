@@ -7,8 +7,9 @@ function iniciar(){
 
 	imagen.src = 'tux.png';
 	imagen.addEventListener('load', function(){
-		//lienzo.drawImage(imagen, 0, 0, elemento.width / 2, elemento.height / 2);
-		lienzo.drawImage(imagen, 0, 0, elemento.width = 200, elemento.height = 200);
+		//los primeros valores 5 y 10 es la posición left/top donde aparece la imágen
+		//los otros valores son el tamaño del elemento/imágen
+		lienzo.drawImage(imagen, 5, 10, elemento.width = 400, elemento.height = 400);
 	}, true);
 }
 

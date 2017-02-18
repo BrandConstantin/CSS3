@@ -25,4 +25,7 @@ var doughnutData = [{
     label: "Dark Grey"
 }];
 
+//llama a Doughnut, hace lo mismo que pie
+//con la diferencia de que forma un circulo grande en medio, sin color
+//da impresión de un donut
 var Doughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData, { pointLabelFontSize: 13, pointLabelFontColor: "#ffa45e" });

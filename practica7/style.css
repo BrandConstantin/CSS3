@@ -1,127 +1,133 @@
-#reproductor{
-	width: 400px;
-	height: 280px;
-	background-color: #000;
-	opacity: 0.6;
-	border-radius: 150px 65px 65px 65px;
-	-moz-border-radius: 150px 65px 65px 65px;
-	-webkit-border-radius: 150px 65px 65px 65px;
-	border: 23px solid #0e6d96;
-	margin: 0 auto;
+#reproductor {
+    width: 400px;
+    height: 280px;
+    background-color: #000;
+    opacity: 0.6;
+    border-radius: 150px 65px 65px 65px;
+    -moz-border-radius: 150px 65px 65px 65px;
+    -webkit-border-radius: 150px 65px 65px 65px;
+    border: 23px solid #0e6d96;
+    margin: 0 auto;
 }
 
-button{
-	position: absolute;
+button {
+    position: absolute;
 }
 
-#play, #pause, #stop, #bigVol, #littleVol{
-	width: 42px;
-	height: 42px;
-	background-repeat: no-repeat;
-	vertical-align: middle;
-	background-image: url("img/btns.png");
-	border-radius: 50%;
-	top: 150px;
+#play,
+#pause,
+#stop,
+#bigVol,
+#littleVol {
+    width: 42px;
+    height: 42px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-image: url("img/btns.png");
+    border-radius: 50%;
+    top: 150px;
 }
 
-#play{
-	margin-left: 80px;
-	background-position: -1px -2px; 
+#play {
+    margin-left: 80px;
+    background-position: -1px -2px;
 }
 
-#play:hover{
-	background-position: -1px -42px;
+#play:hover {
+    background-position: -1px -42px;
 }
 
-#play:active{
-	background-position: -1px -42px;
+#play:active {
+    background-position: -1px -42px;
 }
 
-#play:visited{
-  background-position: -1px -2px;	
+#play:visited {
+    background-position: -1px -2px;
 }
 
-#pause{
-	background-position: -41px -2px;
-	margin-left: 130px;
+#pause {
+    background-position: -41px -2px;
+    margin-left: 130px;
 }
 
-#pause:hover{
-	background-position: -41px -42px;
+#pause:hover {
+    background-position: -41px -42px;
 }
 
-#pause:active{
-	background-position: -41px -42px;
+#pause:active {
+    background-position: -41px -42px;
 }
 
-#stop{
-	background-position: -81px -2px;
-	margin-left: 180px;	
+#stop {
+    background-position: -81px -2px;
+    margin-left: 180px;
 }
 
-#stop:hover{
-	background-position: -81px -42px;
+#stop:hover {
+    background-position: -81px -42px;
 }
 
-#bigVol{
-	background-position: -121px -2px;
-	margin-left: 230px;	
+#bigVol {
+    background-position: -121px -2px;
+    margin-left: 230px;
 }
 
-#bigVol:hover{
-	background-position: -121px -42px;
+#bigVol:hover {
+    background-position: -121px -42px;
 }
 
-#littleVol{
-	background-position: -162px -2px;
-	margin-left: 280px;	
+#littleVol {
+    background-position: -162px -2px;
+    margin-left: 280px;
 }
 
-#littleVol:hover{
-	background-position: -161px -42px;
+#littleVol:hover {
+    background-position: -161px -42px;
 }
 
-#altavoz{
-	background-image: url("img/altavoz.png");
-	margin: 0 auto;
-	margin-top: 75px;		
-	width: 95px;
-	height: 95px;
-	-ms-transform: scale(0.9, 1); /* IE 9 */
-	-webkit-transform: scale(0.9, 1); /* Safari */
-	transform: scale(1, 1);
-	animation-name: mover;
-	animation-duration: 0.4s;
-	animation-iteration-count: infinite;
+.altavoz {
+    background-image: url("img/altavoz.png");
+    margin: 0 auto;
+    margin-top: 75px;
+    width: 95px;
+    height: 95px;
+    animation-name: mover;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
 }
 
-@keyframes mover{
-	from{
-		width: 95px;
-		height: 95px;
-	}80%{
-		width: 99px;
-		height: 99px;
-	}to{
-		width: 103px;
-		height: 103px;
-	}
+
+/*mover el altavoz*/
+
+@keyframes mover {
+    from {
+        width: 95px;
+        height: 95px;
+    }
+    80% {
+        width: 99px;
+        height: 99px;
+    }
+    to {
+        width: 103px;
+        height: 103px;
+    }
 }
 
-hr{
-	width: 80%;
-	margin-top: 5px;
+hr {
+    width: 80%;
+    margin-top: 5px;
 }
 
-h1{
-	color: #fff;
-	opacity: 0.7;
-	text-align: center;
+h1 {
+    color: #fff;
+    opacity: 0.7;
+    text-align: center;
 }
 
-#duration{
-	background-color: grey;
-	margin-left: 40px;
-	margin-top: -25px;
-	color: #fff;
+#duration {
+    background-color: lightcyan;
+    margin-left: 40px;
+    margin-top: -25px;
+    color: #000;
 }
