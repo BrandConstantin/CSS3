@@ -4,17 +4,16 @@ function iniciar(){
 	lienzo = elemento.getContext('2d');
 	//lienzo.strokeRect(0, 0, elemento.width, elemento.height);
 
+	lienzo.beginPath();
+	lienzo.moveTo(400, 230);
 	//métodos
 	//arc() permite dibujar un arco o un circulo
-	//quadraticCurveTo genera una curva Bézier cuadrática 
-	//bezierCurveTo
-
-	lienzo.beginPath();
-
-	lienzo.moveTo(130, 130);
 	//lienzo.qadraticCurveTo(posición las primeras 2, radio, angulo inicio, angulo final, dirección);
-	lienzo.arc(250, 130, 125, 0 , Math.PI*2, true);
-
+	//posición left y top del circulo
+	//205 el radio del circulo
+	//longitud del ciculo no dibujada, 0 el circulo se dibujara completamente
+	//true significa que el circulo se dibujara de arriba hacia abajo, false al reves
+	lienzo.arc(400, 300, 205, 1.6 , Math.PI * 2, false);
 	lienzo.stroke();
 }
 

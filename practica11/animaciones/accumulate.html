@@ -11,7 +11,13 @@
 <body>
     <svg width="250" height="100">
         <circle r="10" fill="red" cx="10" cy="88">
-            <animateMotion id="am" path="m0 0 c 30 -40 70 -40 76 0" dur=".5s" accumulate="sum" repeatCount="16" fill="freeze" begin="click"></animateMotion>
+            <!--
+                m0 el left hasta donde se animara el circulo
+                -20 el top hasta donde se animara el circulo
+                fill = freeze para 'congelar' la animación 
+                begin para que la animación empieza cuando se haga click
+            -->
+            <animateMotion id="am" path="m0,-20 c30,40 70,-40 76 0" dur=".5s" accumulate="sum" repeatCount="16" fill="freeze" begin="click"></animateMotion>
         </circle>
     </svg>
 </body>

@@ -5,9 +5,10 @@ function iniciar(){
 	lienzo.strokeRect(0, 0, elemento.width, elemento.height);
 
 	lienzo.beginPath();
-	lienzo.moveTo(100, 100);
+	lienzo.moveTo(300, 100);
+	lienzo.lineTo(400, 200);
+	lienzo.lineTo(300, 300);
 	lienzo.lineTo(200, 200);
-	lienzo.lineTo(100, 200);
 	lienzo.fill();
 }
 

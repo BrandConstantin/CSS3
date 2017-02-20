@@ -3,11 +3,14 @@ function iniciar(){
 
 	lienzo = elemento.getContext('2d');
 	
+	//definir propriedades texto
 	lienzo.font = "bold 24px verdana, sans-serif";
-	lienzo.textAlign = "start";
-	lienzo.fillStyle = "#d34";
+	//lienzo.textAlign = "start";
+	//el color del texto
+	lienzo.fillStyle = "#d39";
 	//lienzo.textBaseline = 'bottom';
-	lienzo.fillText("Mi mensaje", 100, 120);
+	//la distancia donde aparecera el texto
+	lienzo.fillText("Canvas", 150, 190);
 }
 
 //cuando se carga la página llama a la función iniciar

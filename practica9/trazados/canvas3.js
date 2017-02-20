@@ -9,7 +9,15 @@ function iniciar(){
 	lienzo.lineTo(200, 200);
 	lienzo.lineTo(100, 200);
 	lienzo.closePath();
-	lienzo.stroke();	
+	lienzo.stroke();
+	lienzo.closePath();
+
+	lienzo.beginPath();
+	lienzo.moveTo(300, 300);
+	lienzo.lineTo(400, 400);
+	lienzo.lineTo(300, 400);
+	lienzo.fill();
+	lienzo.closePath();	
 }
 
 //cuando se carga la página llama a la función iniciar

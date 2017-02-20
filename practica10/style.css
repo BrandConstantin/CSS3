@@ -12,4 +12,6 @@ body {
 
 #lienzo{
     position: absolute;
+    border: 5px solid black;
+    left: 10%;
 }

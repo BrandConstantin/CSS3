@@ -4,42 +4,27 @@ function iniciar(){
 	lienzo = elemento.getContext('2d');
 	//lienzo.strokeRect(0, 0, elemento.width, elemento.height);
 
-	//métodos
-	//beginPath() donde comienza el trazado
-	//closePath() donde cierra el trazado generando una linea recta 
-	//métodos para dibujar el trazado en el lienzo
-	//stroke() dibuja el contorno del trazado
-	//fill() dubuja el trazado como una figura sólida
-	//clip() declara una nueva área de corte para el contexto
-	//1
 	lienzo.beginPath();
 	lienzo.moveTo(100, 100);
 	lienzo.lineTo(300, 300);
 	lienzo.lineTo(100, 200);
 	//lienzo.clip();
-	lienzo.stroke();
-	lienzo.beginPath();
-	for (i = 0; i < 300; i += 10) {
-		lienzo.moveTo(0, i);
-		lienzo.lineTo(500, i);
-	}
-	//lienzo.closePath();
-	//lienzo.stroke();
-	//lienzo.fill();
-	//2
+	lienzo.fill();
 	//lienzo.beginPath();
-	//lienzo.moveTo(left, top);
-	lienzo.moveTo(600, 100);
-	lienzo.lineTo(50, 10);
-	lienzo.lineTo(500, 200);
-	lienzo.stroke();
-	lienzo.beginPath();
-	for (i = 0; i < 300; i += 10) {
+	for (i = 20; i < 800; i += 20){ 
 		lienzo.moveTo(0, i);
-		lienzo.lineTo(500, i);
+		lienzo.lineTo(800, i);
+		
+		for(j = 20; j < 800; j += 20){
+			lienzo.moveTo(800, j); // + j
+			lienzo.lineTo(0, j + j); // +
+			
+			//lienzo.stroke();
+			
+		}
+
+		lienzo.stroke();
 	}
-	//lienzo.closePath();
-	lienzo.stroke();
 }
 
 //cuando se carga la página llama a la función iniciar

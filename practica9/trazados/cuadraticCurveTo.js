@@ -5,15 +5,16 @@ function iniciar(){
 	//lienzo.strokeRect(0, 0, elemento.width, elemento.height);
 
 	//métodos
-	//arc() permite dibujar un arco o un circulo
 	//quadraticCurveTo genera una curva Bézier cuadrática 
-	//bezierCurveTo
 
 	lienzo.beginPath();
-
-	lienzo.moveTo(200, 250);
+	
+	//punto inicial, left y top
+	lienzo.moveTo(250, 250);
 	//lienzo.qadraticCurveTo(punto de forma, punto de forma, posición actual lapiz, posición final lapiz);
-	lienzo.quadraticCurveTo(250, 15, 350, 350);
+	// 800 left y 200 top el punto de curbura
+	//100 left y 350 top, el punto final
+	lienzo.quadraticCurveTo(800, 200, 100, 350);
 
 	lienzo.stroke();
 }

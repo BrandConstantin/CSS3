@@ -6,8 +6,8 @@ function iniciar(){
 	
 	lienzo.fillStyle = "#d34";
 	lienzo.moveTo(50, 50);
-	lienzo.lineTo(100, 150);
-	lienzo.lineTo(100, 40);
+	lienzo.lineTo(600, 50);
+	lienzo.lineTo(600, 400);
 	lienzo.fill();
 }
 

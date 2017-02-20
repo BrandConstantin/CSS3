@@ -8,17 +8,33 @@
 
 <body>
     <svg width="250" height="200">
-        <g fill="CornflowerBlue" stroke="#900">
-            <title>flor</title>
-            <desc>Una flor hecha de círculos</desc><circle cx="150" cy="100" r="20"></circle>
-            <circle cx="138" cy="122" r="20"></circle>
-            <circle cx="113" cy="122" r="20"></circle>
-            <circle cx="100" cy="101" r="20"></circle>
-            <circle cx="112" cy="78" r="20"></circle>
-            <circle cx="138" cy="78" r="20"></circle>
-            <path d="M130,100 a20,20 0 1,1 40,0"></path>
-            <circle cx="125" cy="100" r="15" fill="red" stroke="#990"></circle>
-        </g>
+		<!-- 
+			fill el color de la flor 
+			stroke el color del border
+		-->
+		<g fill="black" stroke="#d39">
+			<title>Flor</title>
+			<desc>Una flor hecha con círculos</desc>
+			<!--
+				cx el left del circulo
+				cy el top del circulo
+				r el radio del circulo
+			-->
+			<circle cx="150" cy="100" r="20"></circle>
+			<circle cx="138" cy="122" r="20"></circle>
+			<circle cx="113" cy="122" r="20"></circle>
+			<circle cx="100" cy="101" r="20"></circle>
+			<circle cx="112" cy="78" r="20"></circle>
+			<circle cx="138" cy="78" r="20"></circle>
+			<!--para que el ultimo circulo no se supraponga se recorta
+				M130,100 es el left y top del circulo
+				a20, 20 es el radio del circulo, son iguales para no salir con forma eliptica
+				1,1 para recortar el circulo en bottom si será 0,0 se recorta en la parte superior
+				-->
+			<path d="M130,100 a20,20 0 1,1 40,0"></path>
+			<!--este es el ultimo circulo, amplasado en medio, de color amarillo-->
+			<circle cx="125" cy="100" r="15" fill="yellow" stroke="#000"></circle>
+		</g>
     </svg>
 </body>
 

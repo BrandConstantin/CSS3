@@ -5,24 +5,31 @@ function iniciar() {
     lienzo.strokeRect(0, 0, elemento.width, elemento.height);
 
     lienzo.beginPath();
-    lienzo.lineCap="round";
-    lienzo.moveTo(180,180);
-    lienzo.lineTo(400,180);
-    lienzo.stroke();
-
-    lienzo.beginPath();
+	//las puntas de las lineas (los puntos) que sean redondos
+    lienzo.lineCap = "round";
+	//las puntas de las lineas(los puntos) que se unen que sean redondos
     lienzo.lineJoin="round";
-    lienzo.moveTo(20,50);
-    lienzo.lineTo(100,50);
-    lienzo.lineTo(20,100);
+		//el cuadrado
+	//width de la linea del cuadrado
+    lienzo.lineWidth = 30;
+	//120 left y 340 top donde aparece el cuadrado
+	//100 width y 100 height del cuadrado
+    lienzo.strokeRect(120,40,100,100);
+	lienzo.closePath();
+	
+	lienzo.beginPath();
+	lienzo.lineCap = 'round';
+	lienzo.lineWidth = 10;
+	//lineJoin une las dos lineas de forma afilada
+    lienzo.lineJoin = "miter";
+	//la longitud de del "alfiler"
+    lienzo.miterLimit = 15;
+	
+    lienzo.moveTo(220,220);
+    lienzo.lineTo(600,270);
+    lienzo.lineTo(220,320);
     lienzo.stroke();
-
-    lienzo.lineWidth=10;
-    lienzo.strokeRect(20,140,80,100);
-    
-    lienzo.lineWidth=10;
-    lienzo.lineJoin="miter";
-    lienzo.miterLimit=5;
+	
     lienzo.moveTo(20,20);
     lienzo.lineTo(50,27);
     lienzo.lineTo(20,34);
