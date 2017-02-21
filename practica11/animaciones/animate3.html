@@ -8,9 +8,20 @@
 
 <body>
     <svg width="400" height="120">
-        <rect x="10" y="20" width="100" height="80" style="fill:#6ab150; stroke:#000;stroke-width:5;">
-            <animate id="anim1" attributeType="XML" attributeName="x" from="0" to="300" dur="5s" begin="0s; anim2.end" fill="freeze"></animate>
-            <animate id="anim2" attributeType="XML" attributeName="x" from="300" to="00" dur="5s" begin="anim1.end" fill="freeze"></animate>
+        <!--
+			x left de donde empieza el rectangulo
+			y top de donde empieza el rectangulo
+			width y height del rectangulo
+			style='fill:....' es el color css del atributo
+		
+            attributeName es el nombre del svg
+            attributeType es un atributo de tipo XML
+			from='-110' to='400' es de donde empieza y donde acaba 
+            dur='5s' es la duración de la animación
+            begin="0s; anim2.end" cuando acabe esta animación empieza la otra-->
+        <rect x="-50" y="20" width="100" height="80" style="fill:#6ab150; stroke:#000;stroke-width:5;">
+            <animate id="anim1" attributeType="XML" attributeName="x" from="-50" to="230" dur="5s" begin="0s; anim2.end" fill="freeze"></animate>
+            <animate id="anim2" attributeType="XML" attributeName="x" from="230" to="-50" dur="5s" begin="anim1.end" fill="freeze"></animate>
             <animate attributeName='fill' attributeType='CSS' attributeName='x' from='red' to='yellow' dur='5s' repeatCount="indefinite"></animate>
         </rect>
     </svg>

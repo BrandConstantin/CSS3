@@ -9,17 +9,18 @@
 <body>
     <svg width="400" height="120">
         <!--
+			x left de donde empieza el rectangulo
+			y top de donde empieza el rectangulo
+			width y height del rectangulo
+			style='fill:....' es el color css del atributo
+		
             attributeName es el nombre del svg
             attributeType es un atributo de tipo XML
-            style='fill:....' es el color css del atributo
-            from='-110' to='400' es de donde empieza y donde acaba 
+			from='-110' to='400' es de donde empieza y donde acaba 
             dur='5s' es la duración de la animación
             prepeatCount = 'indefinite' para que se repita indefinidamente-->
-        <rect x="-110" y="20" width="100" height="80" style="fill:#6ab150; stroke:#000; stroke-width:5;">
+        <rect x="-110" y="40" width="100" height="80" style="fill:#6ab150; stroke:#000; stroke-width:5;">
             <animate attributeName="x" attributeType="XML" from="-110" to="400" dur="5s" repeatCount="indefinite"></animate>
-        </rect>
-        <rect x="-110" y="20" width="100" height="80" style="fill:#6ab150; stroke:#000; stroke-width:5;">
-            <animate attributeName="x" attributeType="XML" from="-110" to="400" dur="5s" begin='0s; click' fill='freeze'></animate>
         </rect>
     </svg>
 </body>

@@ -10,12 +10,19 @@
 
 <body>
     <svg width="250" height="125" viewBox="0 0 400 200">
-            <path id="bezier" d="m25,50 q80,150 175,50 t180,25" style="stroke:blue; stroke-width:2; fill:none;"></path>
-            <polygon points="0,0 -10,0 0,-20 10,0" style="fill: #ff0000;">
-                <animateMotion begin="0s" dur="10s" repeatCount="indefinite">
-                    <mpath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bezier"></mpath>
-                </animateMotion>
-            </polygon>
+		<!--
+			m45, 30 left y top de donde empieza el bezier
+			q90, 135 left y top donde se hace la curba del bezier
+			150, 50 left y top donde acaba la curba bezier
+			t80, 45 left y top donde se hace una segunda curba bezier
+		-->
+		<path id="bezier" d="m45,30 q90,135 150,50 t80,45" style="stroke:blue; stroke-width:2; fill:none;"></path>
+        <!--tamaño de la flechita-->
+		<polygon points="5,5 -5,5 0,-10 5,0" style="fill: #ff0000;">
+			<animateMotion begin="0s" dur="10s" repeatCount="indefinite">
+				<mpath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bezier"></mpath>
+			</animateMotion>
+		</polygon>
         </svg>
 </body>
 

@@ -10,14 +10,14 @@
 
 <body>
     <svg width="250" height="200">
-        <g transform="translate(125,100)">
-            <circle r="180" fill="none">
+        <g transform="translate(125,75)">
+            <circle r="150" fill="none">
                 <animateTransform id="scale1" attributeType="xml" attributeName="transform" type="scale" begin="0s" values="0;1" dur="5s" fill="freeze"></animateTransform>
                 <set begin="scale1.begin" attributeType="CSS" attributeName="fill" to="green"></set>
                 <set begin="scale2.repeat(1)" attributeType="CSS" attributeName="fill" to="gold"></set>
                 <set begin="scale2.begin" attributeType="CSS" attributeName="fill" to="green"></set>
             </circle>
-            <circle r="180" fill="none">
+            <circle r="150" fill="none">
                 <animateTransform id="scale2" attributeType="xml" attributeName="transform" type="scale" begin="5s;scale2.end" values="0;1" dur="5s" repeatCount="2"></animateTransform>
                 <set begin="scale2.begin" attributeType="CSS" attributeName="fill" to="gold"></set>
                 <set begin="scale2.repeat(1)" attributeType="CSS" attributeName="fill" to="green"></set>

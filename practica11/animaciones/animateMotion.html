@@ -10,9 +10,17 @@
 
 <body>
     <svg width="250" height="200">
-        <g transform="translate(55,100)">
+		<!--55 left y 75 top donde aparecera el circulo-->
+        <g transform="translate(55,75)">
+			<!-- style stroke para que se vea el borde del circulo, si es stroke sera invisible
+				fill none para que el circulo sea vacio
+				m0, 0 es el left y top del circulo
+				a70, 70 el width y height del circulo
+				1, para que la linea se pinte, o para que sea solo un punto
+				-->
             <path style="stroke: #00f;stroke-width:3; fill: none;" d="m0,0 a70,70 0 1, 0 0,-1 z"></path>
-            <polygon points="0,0 -10,-10 -10,10" style="fill: #ff0000;">
+			<!--20, 0 el tamaño de la flecha-->
+            <polygon points="20,0 -10,-10 -10,10" style="stroke: #ff0000;">
                 <animateMotion path="m0,0 a70,70 0 1, 0 0,-1 z" dur="10s" rotate="auto" repeatCount="indefinite"></animateMotion>
             </polygon>
         </g>
